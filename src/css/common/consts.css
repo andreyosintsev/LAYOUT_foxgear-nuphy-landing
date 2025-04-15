@@ -37,11 +37,11 @@
     --text-family-main:         Roboto, arial, sans-serif;
     --text-family-menu:         'Roboto Condensed', arial, sans-serif;
 
+    --text-size-menu:           16px;
 
-
-    --text-size-large:          22px;
+    /* --text-size-large:          22px;
     --text-size-main:           20px;
-    --text-size-small:          16px;
+    --text-size-small:          16px; */
 
     /* --text-size-large_mobile:   16px;*/
     --text-size-main_mobile:    18px;
