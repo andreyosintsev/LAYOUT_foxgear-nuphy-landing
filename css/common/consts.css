@@ -40,9 +40,13 @@
     --text-family-main:         Roboto, arial, sans-serif;
     --text-family-menu:         'Roboto Condensed', arial, sans-serif;
 
+    --text-size-main:           14px;
     --text-size-menu:           16px;
 
+    --text-weight-main:         400;
     --text-weight-semibold:     600;
+
+    --text-line-height-main:    18px;
 
     /* Не используются */
 
@@ -51,16 +55,16 @@
     --text-size-small:          16px;
 
     --text-size-large_mobile:   16px;
-    --text-size-main_mobile:    18px;
+    --text-size-main_mobile:    14px;
     --text-size-small_mobile:   14px;
     --text-size-smaler_mobile:  12px;
 
-    --text-weight-main:         400;
+
 
     --text-weight-bold:         700;
 
     --text-line-height-large:   32px;
-    --text-line-height-main:    30px;
+
     --text-line-height-small:   24px;
 
     --text-line-height-large_mobile:    22px;
