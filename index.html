@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Клавиатуры NuPhy</title>
-    <link rel="stylesheet" href="../../css/common/normalize.css">
-    <link rel="stylesheet" href="../../css/common/consts.css">
-    <link rel="stylesheet" href="../logo/css/logo.css">
-    <link rel="stylesheet" href="css/header.css">
+    <title>Logo Block</title>
+    <link rel="stylesheet" href="css/common/normalize.css">
+    <link rel="stylesheet" href="css/common/consts.css">
+    <link rel="stylesheet" href="blocks/header/css/header.css">
+    <link rel="stylesheet" href="css/pages/index.css">
 </head>
 <body style="background-color: lime;">
     <header class="header">
         <div class="wrapper header__wrapper">
             <div class="logo header__logo">
                 <a class="logo__link" href="#" title="Клавиатуры NuPhy - главная страница">
-                    <img class="logo__image" src="../logo/images/logo.webp" alt="Логотип NuPhy">
+                    <img class="logo__image" 
+                        src="images/logo/logo.webp" 
+                        alt="Логотип NuPhy">
                 </a>
             </div>
             <nav class="menu-main header__menu-main">
@@ -66,9 +68,22 @@
                 </ul>
             </nav>
             <div class="menu-mobile-button">
-                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path></svg>
+                <svg aria-hidden="true" 
+                    focusable="false" 
+                    role="presentation" 
+                    class="menu-mobile-button__icon" 
+                    viewBox="0 0 64 64">
+                    <path class="menu-mobile-button__icon-line1" d="M7 15h51">.</path>
+                    <path class="menu-mobile-button__icon-line2" d="M7 32h43">.</path>
+                    <path class="menu-mobile-button__icon-line3" d="M7 49h51">.</path>
+                </svg>
             </div>
         </div>
     </header>
+    <main class="main">
+        <div class="wrapper main__wrapper">
+
+        </div>
+    </main>
 </body>
 </html>

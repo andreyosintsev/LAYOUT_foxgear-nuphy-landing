@@ -26,13 +26,13 @@ body {
 .main {
     padding: 16px 0;
 
-    color: var(--text-color-inverted, #FFFFFF);
+    color: var(--text-color-main, #FFFFFF);
 
     text-align: center;
 
-    background-color: var(--background-color-inverted, #000000);
+    background-color: var(--background-color-main, #000000);
 }
-
+/* 
 .button_buy {
     padding: 16px 20px;
 }
@@ -168,8 +168,9 @@ a.note:hover {
 .contacts {
     padding-top: 90px;
     margin-bottom: 90px;
-}
+} */
 
+/* 
 @media (max-width: 1200px) {
     .content {
         padding: 124px 16px 70px;
@@ -247,4 +248,4 @@ a.note:hover {
 
         line-height: var(--text-line-height-smaller_mobile, 14px);
     }
-}
+} */
