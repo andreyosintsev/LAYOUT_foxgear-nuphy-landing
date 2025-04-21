@@ -6,10 +6,14 @@
     <title>Клавиатуры NuPhy - главная страница</title>
     <link rel="stylesheet" href="css/common/normalize.css">
     <link rel="stylesheet" href="css/common/consts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/common/owl.carousel.min.css" >
+    <link rel="stylesheet" href="css/common/owl.theme.default.min.css" >
     <link rel="stylesheet" href="blocks/header/css/header.css">
+    <link rel="stylesheet" href="blocks/hero-slider/css/hero-slider.css">
     <link rel="stylesheet" href="css/pages/index.css">
 </head>
-<body style="background-color: lime;">
     <header class="header">
         <div class="wrapper header__wrapper">
             <div class="logo header__logo">
@@ -82,7 +86,22 @@
     </header>
     <main class="main">
         <div class="wrapper main__wrapper">
-
+            <div class="hero-slider">
+                <div class="hero-slider__cards owl-carousel owl-theme">
+                    <div class="hero-slider__card">
+                        <a class="hero-slider__link" href="#" title="NuPhy - клавиатуры и аксессуары">
+                            <img class="hero-slider__image" src="images/hero-slider/hero-slider-01.png" alt="NuPhy - клавиатуры и аксессуары">
+                        </a>
+                    </div>
+                    <div class="hero-slider__card">
+                        <a class="hero-slider__link" href="#" title="NuPhy - клавиатуры и аксессуары">
+                            <img class="hero-slider__image" src="images/hero-slider/hero-slider-02.png" alt="NuPhy - клавиатуры и аксессуары">
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-slider__button hero-slider__button_prev"></div>
+                <div class="hero-slider__button hero-slider__button_next"></div>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -90,5 +109,32 @@
 
         </div>
     </footer>
+    <script src="scripts/util/jquery-3.7.1.min.js"></script>
+    <script src="scripts/util/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            const $owl = $('.hero-slider__cards').owlCarousel(
+            {
+                items: 1,
+                loop: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                nav: false,
+                dots: false,
+                animateIn: 'animate__animated animate__fadeIn',
+                smartSpeed: 450,
+                pullDrag: true,
+                autoWidth: false,
+                autoHeight: false,
+            });
+            $(".hero-slider__button_next").click(function() {
+                $owl.trigger("next.owl.carousel");
+            });
+
+            $(".hero-slider__button_prev").click(function() {
+                $owl.trigger("prev.owl.carousel");
+            });
+        });
+    </script>
 </body>
 </html>

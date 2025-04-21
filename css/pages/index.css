@@ -1,7 +1,3 @@
-* {
-    outline: 1px solid #AAAAAA;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -33,20 +29,17 @@ body {
     color: var(--text-color-main, #000000);
 
     text-align: left;
-
-    background-color: var(--background-color-main, FFFFFF);
 }
 
 @media (max-width: 1600px) {
     .main__wrapper {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 92px 40px 0;
     }
 }
 
 @media (max-width: 768px) {
     .main__wrapper {
-        padding: 14px 14px 0;
+        padding: 70px 14px 0;
         margin-bottom: 40px;
     }
 }

@@ -83,6 +83,8 @@
 /*
     Рамки
 */
+
+    --border-radius-hero-slider:    16px; /* hero-slider */
     /* Не используются */
 
     --border-radius-video:          20px; /* popup  */
