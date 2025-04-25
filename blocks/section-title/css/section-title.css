@@ -1,13 +1,13 @@
 .section-title {
-    margin: 0 0 50px 0;
+    margin: 0;
     padding: 0;
 
     color: var(--text-color-main, #000000);
     font-family: var(--text-family-menu, sans-serif);
-    font-size: 32px;
-    font-weight: 700;
+    font-size: var(--text-size-section, 32px);
+    font-weight: var(--text-weight-bold, 700);
 
-    line-height: 36px;
+    line-height: var(--text-line-height-section, 36px);
 
     text-align: left;
 }
@@ -16,7 +16,7 @@
     .section-title {
         margin-bottom: 25px;
 
-        font-size: 30px;
-        line-height: 33px;
+        font-size: var(--text-size-section_mobile, 30px);
+        line-height: var(--text-line-height-section_mobile, 33px);
     }
 }

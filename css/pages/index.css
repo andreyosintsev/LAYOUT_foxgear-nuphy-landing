@@ -35,6 +35,10 @@ body {
     margin-bottom: 60px;
 }
 
+.products {
+    margin-bottom: 60px;
+}
+
 @media (max-width: 1600px) {
     .main__wrapper {
         padding: 92px 40px 0;
@@ -48,6 +52,10 @@ body {
     }
 
     .hero-slider {
+        margin-bottom: 40px;
+    }
+
+    .products {
         margin-bottom: 40px;
     }
 }
