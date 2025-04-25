@@ -1,0 +1,22 @@
+.section-title {
+    margin: 0 0 50px 0;
+    padding: 0;
+
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-menu, sans-serif);
+    font-size: 32px;
+    font-weight: 700;
+
+    line-height: 36px;
+
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .section-title {
+        margin-bottom: 25px;
+
+        font-size: 30px;
+        line-height: 33px;
+    }
+}
