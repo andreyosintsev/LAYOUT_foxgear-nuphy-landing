@@ -1,0 +1,30 @@
+.publications {
+    width: 100%;
+}
+
+.publications__title {
+    margin-bottom: 40px;
+}
+
+.publications__publications {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    
+    word-break: break-word;
+}
+
+.publications__publication {
+    margin-bottom: 25px;
+    padding: 0 30px;
+}
+
+
+@media (max-width: 768px) {
+    .publications__title {
+        margin-bottom: 25px;
+
+        text-align: center;
+    }
+}

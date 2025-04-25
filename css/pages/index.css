@@ -39,6 +39,10 @@ body {
     margin-bottom: 60px;
 }
 
+.publications {
+    margin-bottom: 60px;
+}
+
 @media (max-width: 1600px) {
     .main__wrapper {
         padding: 92px 40px 0;
