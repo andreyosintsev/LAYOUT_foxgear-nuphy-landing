@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.querySelector('body');
 
     menuMobileButton.addEventListener('click', () => {
-        console.log('Mobile Button Click!');
         if (menuMobile.classList.contains('transparent')) {
             showMenuMobile();
         } else {
@@ -33,14 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
     menuLinks.forEach(link => link.addEventListener('click', hideMenuMobile));
 
     function showMenuMobile() {
-        console.log('Show Menu Mobile');
         menuMobileButton.classList.add('menu-mobile-button_active');
         menuMobile.classList.remove('transparent');
         body.classList.add('noscroll');
     }
 
     function hideMenuMobile() {
-        console.log('Hide Menu Mobile');
         menuMobileButton.classList.remove('menu-mobile-button_active');
         menuMobile.classList.add('transparent');
         body.classList.remove('noscroll');
