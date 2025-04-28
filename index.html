@@ -6,13 +6,14 @@
     <title>Клавиатуры NuPhy - главная страница</title>
     <link rel="stylesheet" href="css/common/normalize.css">
     <link rel="stylesheet" href="css/common/consts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/common/animate.min.css">
 
     <link rel="stylesheet" href="css/common/owl.carousel.min.css" >
     <link rel="stylesheet" href="css/common/owl.theme.default.min.css" >
     <link rel="stylesheet" href="blocks/header/css/header.css">
+    <link rel="stylesheet" href="blocks/menu-mobile/css/menu-mobile.css">
     <link rel="stylesheet" href="blocks/hero-slider/css/hero-slider.css">
-    <link rel="stylesheet" href="blocks/buttonx/css/button.css">
+    <link rel="stylesheet" href="blocks/button/css/button.css">
     <link rel="stylesheet" href="blocks/section-title/css/section-title.css">
     <link rel="stylesheet" href="blocks/card-product/css/card-product.css">
     <link rel="stylesheet" href="blocks/products/css/products.css">
@@ -84,13 +85,84 @@
                     role="presentation" 
                     class="menu-mobile-button__icon" 
                     viewBox="0 0 64 64">
-                    <path class="menu-mobile-button__icon-line1" d="M7 15h51">.</path>
-                    <path class="menu-mobile-button__icon-line2" d="M7 32h43">.</path>
-                    <path class="menu-mobile-button__icon-line3" d="M7 49h51">.</path>
+                    <path class="menu-mobile-button__icon-line1" d="M7 15h51"></path>
+                    <path class="menu-mobile-button__icon-line2" d="M7 32h43"></path>
+                    <path class="menu-mobile-button__icon-line3" d="M7 49h51"></path>
                 </svg>
             </div>
         </div>
     </header>
+    <div class="menu-mobile transparent">
+        <div class="menu-mobile__content">
+            <ul class="menu-mobile__items">
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__item-link" 
+                        href="#" 
+                        title="Клавиатуры">
+                        <img class="menu-mobile__item-logo"
+                              src="images/menu-mobile/menu-mobile-keyboards.webp"
+                              alt="Клавиатуры">
+                        <div class="menu-mobile__item-title">
+                            Клавиатуры
+                        </div>
+                        <div class="menu-mobile__item-arrow"></div>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__item-link" 
+                        href="#" 
+                        title="Клавиатуры с магнитными переключателями">
+                        <img class="menu-mobile__item-logo"
+                              src="images/menu-mobile/menu-mobile-keyboards-he.webp"
+                              alt="Клавиатуры с магнитными переключателями">
+                        <div class="menu-mobile__item-title">
+                            Клавиатуры с магнитными переключателями
+                        </div>
+                        <div class="menu-mobile__item-arrow"></div>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__item-link" 
+                        href="#" 
+                        title="Аксессуары">
+                        <img class="menu-mobile__item-logo"
+                              src="images/menu-mobile/menu-mobile-keycaps.webp"
+                              alt="Аксессуары">
+                        <div class="menu-mobile__item-title">
+                            Аксессуары
+                        </div>
+                        <div class="menu-mobile__item-arrow"></div>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__item-link" 
+                        href="#" 
+                        title="О нас">
+                        <img class="menu-mobile__item-logo"
+                              src="images/menu-mobile/menu-mobile-about.webp"
+                              alt="О нас">
+                        <div class="menu-mobile__item-title">
+                            О нас
+                        </div>
+                        <div class="menu-mobile__item-arrow"></div>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__item-link" 
+                        href="#" 
+                        title="Контакты">
+                        <img class="menu-mobile__item-logo"
+                              src="images/menu-mobile/menu-mobile-contacts.webp"
+                              alt="Контакты">
+                        <div class="menu-mobile__item-title">
+                            Контакты
+                        </div>
+                        <div class="menu-mobile__item-arrow"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <main class="main">
         <div class="wrapper main__wrapper">
             <div class="hero-slider">
@@ -382,13 +454,14 @@
     
     <script src="scripts/util/jquery-3.7.1.min.js"></script>
     <script src="scripts/util/owl.carousel.min.js"></script>
+    <script src="scripts/menu-mobile.js"></script>
     <script>
         $(document).ready(function(){
             const $owl = $('.hero-slider__cards').owlCarousel(
             {
                 items: 1,
                 loop: true,
-                autoplay: false,
+                autoplay: true,
                 autoplayTimeout: 5000,
                 nav: false,
                 dots: false,

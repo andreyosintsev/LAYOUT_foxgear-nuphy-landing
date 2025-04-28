@@ -28,11 +28,6 @@
 }
 
 @media (max-width: 1200px) {
-    .wrapper {
-        padding-right: 16px;
-        padding-left: 16px;
-    }
-
     .products__card {
         flex: 0 0 25%;
     }
@@ -42,7 +37,6 @@
     .products__title {
         margin-bottom: 25px;
     }
-
 
     .products__card {
         flex: 0 0 33%;

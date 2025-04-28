@@ -15,7 +15,8 @@
     --black:                    #000000; /* main text */
     --black-light:              #3C3C3C; /* menu, button hover */
     --gray:                     #656565; /* description */
-    --light-gray:                #E8E8E1; /* review background */
+    --light-gray:               #E8E8E1; /* review background */
+    --off-white:                #F8F8F8; /* menu mobile background */
     --white:                    #FFFFFF; /* background */
 
     /* Не используются */
@@ -24,7 +25,6 @@
     
     --gray-dark:                #747474; /* gray button */
     --gray-light:               #EFEFEF; /* button outlined hover */
-    --off-white:                #F5F5F5; /* review background */
     --red:                      #FF6666; /* form error */
     --green:                    #1C9C4D; /* form success, blue button hover */
     --blue:                     #4A90E2; /* blue button */
@@ -97,6 +97,7 @@
 
     --border-radius-hero-slider:    16px; /* hero-slider  */
     --border-radius-card:           14px; /* card-product */
+    --border-radius-menu-mobile:    14px; /* menu mobile  */
 
     /* Не используются */
 
