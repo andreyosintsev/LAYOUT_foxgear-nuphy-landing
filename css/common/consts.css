@@ -13,9 +13,10 @@
     Основная палитра
 */
     --black:                    #000000; /* main text */
-    --white:                    #FFFFFF; /* background */
     --black-light:              #3C3C3C; /* menu, button hover */
     --gray:                     #656565; /* description */
+    --light-gray:                #E8E8E1; /* review background */
+    --white:                    #FFFFFF; /* background */
 
     /* Не используются */
 
@@ -35,7 +36,7 @@
 
     --text-color-main:          var(--black);
     --text-color-inverted:      var(--white);
-    --text-color-menu:          var(--black-light);
+    --text-color-menu:          var(--black);
 
     --text-family-main:         Roboto, arial, sans-serif;
     --text-family-menu:         'Roboto Condensed', arial, sans-serif;
@@ -43,9 +44,11 @@
     --text-size-section:        32px;
     --text-size-menu:           16px;
     --text-size-product:        16px;
+    --text-size-footer:         16px;
     --text-size-main:           14px;
 
     --text-size-section_mobile: 30px;
+    --text-size-footer_mobile:  13px;
  
     --text-weight-main:         400;
     --text-weight-semibold:     600;
@@ -54,8 +57,10 @@
     --text-line-height-section: 36px;
     --text-line-height-large:   24px;
     --text-line-height-main:    18px;
+    --text-line-height-footer:  23px;
 
     --text-line-height-section_mobile: 33px;
+    --text-line-height-footer_mobile:  20px;
 
 
 
