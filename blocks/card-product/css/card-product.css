@@ -70,38 +70,7 @@
 }
 
 .card-product__rating {
-    display: flex;
-}
-
-.card-product__rating-stars {
-    margin-right: 8px;
-
-    white-space: nowrap;
-}
-
-.card-product__rating-star {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    
-    background-image: url("../images/star.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 14px;
-}
-
-.card-product__rating-star_blank {
-    background-image: url("../images/star-blank.svg");
-}
-
-.card-product__rating-reviews {
-    margin-top: 3px;
-
-    color: var(--black, #000000);
-    font-size: var(--text-size-main, 14px);
-    font-weight: var(--text-weight-main, 400);
-
-    line-height: 16px;
+    margin-top: 5px;
 }
 
 .card-product__price {
