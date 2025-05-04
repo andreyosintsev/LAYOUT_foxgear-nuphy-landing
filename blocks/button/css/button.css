@@ -28,6 +28,15 @@
     border: 2px solid var(--button-normal-background-color_hover, #3C3C3C);
 }
 
+.button_buy {
+    width: 100%;
+    padding: 13px 25px;
+
+    font-size: 19px;
+
+    line-height: 27px;
+}
+
 .button_outlined {
     color: var(--button-outlined-color, #000000);
 
@@ -72,4 +81,15 @@
 
 a.button {
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .button_buy {
+        width: 100%;
+        padding: 9px 25px;
+    
+        font-size: 17px;
+    
+        line-height: 24px;
+    }
 }
