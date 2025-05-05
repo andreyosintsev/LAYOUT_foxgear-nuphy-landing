@@ -1,7 +1,9 @@
 $(document).ready(function() {
     /* Карусель с товарами и выбором карточки по клику на превью */
 
-    $('.hero-single__images').owlCarousel(
+    const $carousel = $('.hero-single__images');
+
+    $carousel.owlCarousel(
         {
             loop: true,
             autoplay: false,
@@ -14,10 +16,16 @@ $(document).ready(function() {
                     items: 1.7,
                     margin: 10
                 },
-                768: {
+                769: {
                     items: 1,
                     margin: 0
                 }
             }
         });
+
+        $('.hero-single__gallery-image').on('click', function() {
+            const index = $(this).data('index');
+            $carousel.trigger('to.owl.carousel', [index, 300]);
+        });
+    
 });

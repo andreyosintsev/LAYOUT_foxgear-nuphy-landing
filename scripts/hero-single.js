@@ -1,28 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('hero-single.js loaded!');
     
-    const singleImg = document.querySelector('.hero-single__image');
-    console.log('singleImg', singleImg);
+    const carousel = document.querySelector('.hero-single__images');
+    console.log('carousel', carousel);
 
-    if (!singleImg) {
-        return console.error('DOM: no .hero-single__image element found');
+    if (!carousel) {
+        return console.error('DOM: no carousel .hero-single__image element found');
     }
 
-    const singlePhotos = document.querySelector('.hero-single__gallery-images');
-    console.log('singlePhotos', singlePhotos);
+    const galleryImages = document.querySelector('.hero-single__gallery-images');
+    console.log('gallery images', galleryImages);
     
-    if (!singlePhotos) {
-        return console.error('DOM: no .hero-single__gallery-image element found');
+    if (!galleryImages) {
+        return console.error('DOM: no gallery .hero-single__gallery-images element found');
     }
     
-    singlePhotos.addEventListener('click', (e) => {
-        const currentPhoto = e.target;
-        if (!currentPhoto) {
-            return console.error('DOM: no .hero-single__gallery-image element found');
+    galleryImages.addEventListener('click', (e) => {
+        const currentImage = e.target;
+        if (!currentImage) {
+            return console.error('DOM: no current image .hero-single__gallery-image element found');
         }
 
-        if (!currentPhoto.hasAttribute('src')) return;
+        const index = currentImage.dataset.index;
+        console.log(index);
+
+        if (!index) return;
         
-        singleImg.src = currentPhoto.src;
+        carousel.trigger('to.owl.carousel', [index, 300]);
     });
 });

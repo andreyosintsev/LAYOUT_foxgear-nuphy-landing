@@ -73,6 +73,7 @@
     .panel-single__title {
         margin: 9px 0 6px 0;
     
+        font-family: var(--text-family-menu, sans-serif);
         font-size: 30px;
     
         line-height: 33px;
