@@ -1,6 +1,6 @@
 .panel-single {
     display: block;
-    width: 100%;
+    width: clamp(173px, calc(48.9vw - 202.55px), 580px);
     padding: 0;
 
     color: var(--text-color-main, #000000);
@@ -60,7 +60,14 @@
 
 @media (max-width: 768px) {
     .panel-single {
+        padding: 0 16px;
+
         font-size: var(--text-size-single_mobile, 15px);
+    }
+
+    .panel-single__description {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
     }
 
     .panel-single__title {
@@ -78,12 +85,16 @@
     }
 
     .panel-single__rating {
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
 
     .panel-single__price {
-        font-size: 14px;
+        font-size: 17px;
     
-        line-height: 21px;
+        line-height: 26px;
+    }
+
+    .panel-single__feature {
+        line-height: 20px;
     }
 }

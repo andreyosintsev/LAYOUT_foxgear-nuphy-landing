@@ -86,7 +86,7 @@ a.button {
 @media screen and (max-width: 768px) {
     .button_buy {
         width: 100%;
-        padding: 9px 25px;
+        padding: 14px 25px;
     
         font-size: 17px;
     

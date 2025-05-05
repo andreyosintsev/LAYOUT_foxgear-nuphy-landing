@@ -1,7 +1,6 @@
 .form {
     display: block;
     width: 100%;
-    max-width: 545px;
     padding: 0;
 
     color: var(--text-color-main, #000000);
@@ -15,6 +14,7 @@
 }
 
 .form__fieldset {
+    display: block;
     padding: 0;
 
     border: none;
@@ -73,5 +73,9 @@
         font-size: var(--text-size-legend_mobile, 16px);    
     
         line-height: 24px;
+    }
+
+    .form__radio-button {
+        margin: 10px 10px 36px 0;
     }
 }
