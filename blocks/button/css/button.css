@@ -56,6 +56,8 @@
     background-color: var(--button-rounded-background-color, #000000);
 
     border-radius: 50%;
+
+    transition: all 0.3s ease;
 }
 
 .button_rounded:hover {

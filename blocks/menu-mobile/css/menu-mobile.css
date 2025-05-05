@@ -23,7 +23,7 @@
 }
 
 .transparent {
-    top: 0;
+    top: -500px;
     opacity: 0;
 }
 
