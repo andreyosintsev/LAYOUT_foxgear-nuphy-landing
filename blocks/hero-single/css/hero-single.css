@@ -47,7 +47,7 @@
 
 .hero-single__images {
     grid-area: hero-images;
-    width: clamp(400px, calc(400px + 445 * ((100vw - 769px) / 831)), 845px)
+    width: clamp(360px, calc(360px + 485 * ((100vw - 769px) / 831)), 845px)
 }
 
 .hero-single__image {

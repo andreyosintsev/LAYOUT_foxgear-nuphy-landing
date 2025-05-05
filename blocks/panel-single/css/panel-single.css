@@ -60,8 +60,6 @@
 
 @media (max-width: 768px) {
     .panel-single {
-        padding: 0 16px;
-
         font-size: var(--text-size-single_mobile, 15px);
     }
 
@@ -93,6 +91,10 @@
         font-size: 17px;
     
         line-height: 26px;
+    }
+
+    .panel-single__features-list {
+        padding-left: 30px;
     }
 
     .panel-single__feature {

@@ -1,0 +1,19 @@
+.section-title-page {
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    color: var(--gray-darker, #252525);
+    font-family: var(--text-family-menu, sans-serif);
+    font-size: 52px;
+    font-weight: var(--text-weight-bold, 700);
+
+    line-height: 44px;
+
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .section-title-page {
+        margin-bottom: 15px;
+    }
+}

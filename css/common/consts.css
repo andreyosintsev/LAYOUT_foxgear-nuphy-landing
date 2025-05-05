@@ -8,14 +8,17 @@
 
     --max-content-width:        1920px;
     --wrapper-width:            1600px;
+    --content-width:            1080px;
 
 /*
     Основная палитра
 */
     --black:                    #000000; /* main text */
-    --black-light:              #3C3C3C; /* menu, button hover */
+    --gray-darker:              #252525; /* section title page*/
+    --gray-dark:                #3C3C3C; /* back to top */
     --gray:                     #656565; /* description */
     --gray-light:               #D2D7D7; /* description */
+    --gray-neutral:             #DCE2E1; /* p declaration */
     --gray-lighter:             #E8E8E1; /* review background */
     --off-white:                #F8F8F8; /* menu mobile background */
     --white:                    #FFFFFF; /* background */
