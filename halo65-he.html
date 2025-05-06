@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="blocks/block-image/css/block-image.css">
     <link rel="stylesheet" href="blocks/section-title-page/css/section-title-page.css">
     <link rel="stylesheet" href="blocks/tiles-images/css/tiles-images.css">
-    <link rel="stylesheet" href="css/comparison-images.css">
+    <link rel="stylesheet" href="blocks/comparison-images/css/comparison-images.css">
+    <link rel="stylesheet" href="blocks/single-slider/css/single-slider.css">
     <link rel="stylesheet" href="blocks/footer/css/footer.css">
     <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css">
     <link rel="stylesheet" href="css/pages/halo65-he.css">
@@ -386,6 +387,46 @@
             <p class="p-text">
                 <span class="p-strong">Wrist Rest and deskmats.</span> A new electromagnetic interpretation of the classic twin-pieced twotone look, and the high information density Orbit deskmat should give you eyes plenty to feast while your arms rest.
             </p>
+            <div class="single-slider">
+                <div class="single-slider__cards owl-carousel owl-theme">
+                    <div class="single-slider__card">
+                        <img class="card-single__image"
+                            src="images/pages/halo65-he/content/sigle-slider-01.jpg"
+                            alt="Подставки под запястья">
+                    </div>
+                    <div class="single-slider__card">
+                        <img class="card-single__image"
+                            src="images/pages/halo65-he/content/sigle-slider-02.jpg"
+                            alt="Коврики">
+                    </div>
+                </div>
+                <div class="single-slider__button single-slider__button_prev">
+                    <svg  class="single-slider__button-image" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" style="fill: rgba(210, 210, 210, 1);"> <path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"></path> </svg>
+                </div>
+                <div class="single-slider__button single-slider__button_next">
+                    <svg  class="single-slider__button-image"  width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" style="fill: rgba(210, 210, 210, 1);"> <path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path> </svg>
+                </div>
+            </div>
+            <section class="section-page">
+                <p class="p-superscript">UNMATCHED PERFORMANCE</p>
+                <h2 class="section-title-page section-title-page_larger">Instant as instinct</h2>
+                <p class="p-text">
+                    The switches are only half of the story, every component in the signal’s pathway from the switch must run reliably at an even higher speed to fully unleash its potential. The requirements are staggering, the specs of the hardware even more so: MCU clocked at 144MHz, 8000Hz polling rate, only 0.25ms of total latency from the key activation to its registering….through their amazing skills our engineering team has pulled together this feat.
+                </p>
+            </section>
+        </div>
+        <div class="block-image">
+            <picture>
+            <source 
+                srcset="images/pages/halo65-he/content/content-02.webp"
+                media="(min-width: 769px)">
+            <source 
+                srcset="images/pages/halo65-he/content/content-02.webp"
+                media="(max-width: 768px)">
+            <img class="block-image__image"
+                src="images/pages/halo65-he/content/content-02.webp"
+                alt="Клавиатура NuPhy Halo65-HE">
+            </picture>
         </div>
     </main>
     <footer class="footer">
@@ -466,6 +507,7 @@
     <script src="scripts/back-to-top.js"></script>
     <script src="scripts/accordion.js"></script>
     <script src="scripts/carousels.js"></script>
+    <script src="scripts/single-slider.js"></script>
 
     <script>
         $(function(){

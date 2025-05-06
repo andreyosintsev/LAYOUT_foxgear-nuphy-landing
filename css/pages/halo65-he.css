@@ -53,6 +53,10 @@ body {
     margin-bottom: 30px;
 }
 
+.single-slider {
+    margin-bottom: 200px;
+}
+
 @media (max-width: 1600px) {
     .main__wrapper {
         padding: 92px 40px 0;
