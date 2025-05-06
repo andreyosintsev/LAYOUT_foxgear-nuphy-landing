@@ -44,38 +44,9 @@ body {
     margin-bottom: 60px;
 }
 
-.p-declaration {
-    max-width: 800px;
-    margin-bottom: 20px;
-
-    color: var(--gray-neutral, #DCE2E1);
-    font-family: var(--text-family-menu, sans-serif);
-    font-size: 36px;
-
-    line-height: 40px;
-}
-
 .tiles-images {
     padding-top: 100px;
     margin-bottom: 200px;
-}
-
-.p-text {
-    max-width: 800px;
-
-    color: #878C8C;
-    font-size: var(--text-size-page, 18px);
-    line-height: 27px;
-}
-
-.p-superscript {
-    margin-bottom: 20px;
-
-    color: var(--text-color-main, #000000);
-    font-size: var(--text-size-product, 16px);
-    font-weight: var(--text-weight-semibold, 600);
-
-    text-transform: uppercase;
 }
 
 .comparison-images {
