@@ -10,6 +10,7 @@ $(document).ready(function() {
             nav: false,
             dots: false,
             center: true,
+            touchDrag: true,
             pullDrag: true,
             responsive: {
                 0: {

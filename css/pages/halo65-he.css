@@ -55,6 +55,29 @@ body {
     line-height: 40px;
 }
 
+.tiles-images {
+    padding-top: 100px;
+    margin-bottom: 200px;
+}
+
+.p-text {
+    max-width: 800px;
+
+    color: #878C8C;
+    font-size: var(--text-size-page, 18px);
+    line-height: 27px;
+}
+
+.p-superscript {
+    margin-bottom: 20px;
+
+    color: var(--text-color-main, #000000);
+    font-size: var(--text-size-product, 16px);
+    font-weight: var(--text-weight-semibold, 600);
+
+    text-transform: uppercase;
+}
+
 @media (max-width: 1600px) {
     .main__wrapper {
         padding: 92px 40px 0;
