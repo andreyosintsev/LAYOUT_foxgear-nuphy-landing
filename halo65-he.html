@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/common/normalize.css">
     <link rel="stylesheet" href="css/common/owl.carousel.min.css">
     <link rel="stylesheet" href="css/common/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/common/twentytwenty.css">
     <link rel="stylesheet" href="css/common/consts.css">
     <link rel="stylesheet" href="blocks/header/css/header.css">
     <link rel="stylesheet" href="blocks/menu-mobile/css/menu-mobile.css">
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="blocks/block-image/css/block-image.css">
     <link rel="stylesheet" href="blocks/section-title-page/css/section-title-page.css">
     <link rel="stylesheet" href="blocks/tiles-images/css/tiles-images.css">
+    <link rel="stylesheet" href="css/comparison-images.css">
     <link rel="stylesheet" href="blocks/footer/css/footer.css">
     <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css">
     <link rel="stylesheet" href="css/pages/halo65-he.css">
@@ -373,7 +375,11 @@
                     The color theme of Halo65 HE should not only complement its metal frame, but also accentuate its light effects. And we find no better candiate than our EM Lab keycap set. Electric, captivating...the backlight glowing under the orange dye-subed surface and the transparent keycaps projects an aura of energy that galvanizes you and gets you ready for action.
                 </p>
             </section>
-        </div>        
+        </div>
+        <div class="comparison-images" id="comparison-images1">
+            <img src="images/pages/halo65-he/content/comparison-01.webp">
+            <img src="images/pages/halo65-he/content/comparison-02.jpg">
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
@@ -447,9 +453,17 @@
     
     <script src="scripts/util/jquery-3.7.1.min.js"></script>
     <script src="scripts/util/owl.carousel.min.js"></script>
+    <script src="scripts/util/jquery.event.move.js"></script>
+    <script src="scripts/util/jquery.twentytwenty.js"></script>
     <script src="scripts/menu-mobile.js"></script>
     <script src="scripts/back-to-top.js"></script>
     <script src="scripts/accordion.js"></script>
     <script src="scripts/carousels.js"></script>
+
+    <script>
+        $(function(){
+            $("#comparison-images1").twentytwenty({ no_overlay: true });
+        })
+    </script>
 </body>
 </html>

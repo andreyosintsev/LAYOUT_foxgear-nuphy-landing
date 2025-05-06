@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Images Block</title>
+    <link rel="stylesheet" href="../../css/common/normalize.css">
+    <link rel="stylesheet" href="../../css/common/consts.css">
+    <link rel="stylesheet" href="../../css/common/twentytwenty.css">
+    <link rel="stylesheet" href="css/comparison-images.css">
+</head>
+<body style="background-color: yellowgreen; padding: 10px;">
+    <div class="comparison-images" id="comparison-images1">
+        <img src="images/comparison-01.webp">
+        <img src="images/comparison-02.jpg">
+    </div>
+
+    <script src="../../scripts/util/jquery-3.7.1.min.js"></script>
+    <script src="../../scripts/util/jquery.event.move.js"></script>
+    <script src="../../scripts/util/jquery.twentytwenty.js"></script>
+    <script>
+        $(function(){
+            $("#comparison-images1").twentytwenty();
+        })
+    </script>
+</body>
+</html>
