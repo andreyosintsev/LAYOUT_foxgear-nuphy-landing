@@ -14,6 +14,12 @@
     overflow: hidden;
 }
 
+.block-image_contain .block-image__image {
+    min-height: 0;
+    object-fit: contain;
+    overflow: auto;
+}
+
 .block-image__link {
     position: absolute;
     display: block;
