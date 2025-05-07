@@ -96,4 +96,8 @@ body {
     .products {
         margin-bottom: 40px;
     }
+
+    .flex-image-text:first-child {
+        margin-top: 80px;
+    }
 }
