@@ -42,3 +42,17 @@
     font-family: var(--text-family-main, sans-serif);
     font-weight: var(--text-weight-bold, 700);
 }
+
+.p-link {
+    color: var(--link-normal-color, #F76500);
+    font-size: var(--text-size-page, 18px);
+    font-weight: var(--text-weight-bold, 700);
+
+    line-height: 27px;
+
+    text-decoration: none;
+}
+
+.p-link:hover {
+    color: var(--link-normal-color_hover, #FFA366); 
+}

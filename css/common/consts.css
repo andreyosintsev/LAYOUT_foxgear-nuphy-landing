@@ -20,11 +20,13 @@
     --gray-light:               #D2D7D7; /* description */
     --gray-neutral:             #DCE2E1; /* p declaration */
     --gray-lighter:             #E8E8E1; /* review background */
-    --off-white:                #F8F8F8; /* menu mobile background */
+    --off-white:                #F5F5F5; /* menu mobile background, wrapper gray */
     --white:                    #FFFFFF; /* background */
 
     --green-light:              #E0F3EF; /* button selected background*/
     --green:                    #00DFA9; /* button selected */
+    --orange-light:             #FFA366; /* text link hover*/
+    --orange:                   #F76500; /* text link */ 
 
     /* Не используются */
 
@@ -35,7 +37,6 @@
     --red:                      #FF6666; /* form error */
 
     --blue:                     #4A90E2; /* blue button */
-    --orange:                   #EF714B; /* gray button hover */
 
 /*
     Шрифты
@@ -78,28 +79,29 @@
 
     /* Не используются */
 
-    --text-size-large:          22px;
-    --text-size-small:          16px;
+    --text-size-large:                  22px;
+    --text-size-small:                  16px;
 
-    --text-size-large_mobile:   16px;
-    --text-size-main_mobile:    14px;
-    --text-size-small_mobile:   14px;
-    --text-size-smaller_mobile:  12px;
+    --text-size-large_mobile:           16px;
+    --text-size-main_mobile:            14px;
+    --text-size-small_mobile:           14px;
+    --text-size-smaller_mobile:         12px;
 
     
 
-    --text-line-height-small:   24px;
+    --text-line-height-small:           24px;
 
     --text-line-height-large_mobile:    22px;
     --text-line-height-main_mobile:     25px;
     --text-line-height-small_mobile:    16px;
-    --text-line-height-smaller_mobile:    14px;
+    --text-line-height-smaller_mobile:  14px;
 
 /*
     Фоны
 */
 
     --background-color-main: var(--white);
+    --background-color-gray: var(--off-white);
     --background-color-menu: var(--white);
     --background-color-inverted: var(--black);
 
@@ -129,10 +131,9 @@
 /*
     Ссылки
 */
-    /* Не используются */
 
-    --link-normal-color:            var(--black-light);
-    --link-normal-color_hover:      var(--black-light);
+    --link-normal-color:            var(--orange);
+    --link-normal-color_hover:      var(--orange-light);
     --link-normal-color_disabled:   var(--gray);
 
 /*

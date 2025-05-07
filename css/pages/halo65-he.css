@@ -1,5 +1,11 @@
 html {
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
 }
 
 body {
@@ -11,18 +17,43 @@ body {
     line-height: var(--text-line-height-main, 18px);
 
     background-color: var(--background-color-main, #FFFFFF);
-
-    scrollbar-width: thin;
 }
 
 .hidden {
     display: none !important;
 }
 
-.main__wrapper {
+.main {
+    padding-top: 72px;
+}
+
+.wrapper {
+    width: 100%;
+
+    background-color: var(--background-color-main, #FFFFFF);
+}
+
+.wrapper_white {
+    background-color: var(--background-color-main, #FFFFFF);
+}
+
+.wrapper_gray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+
+    background-color: var(--background-color-gray, #F5F5F5);
+}
+
+.wrapper_gray .wrapper-1600 {
+    margin: 0;
+}
+
+.wrapper-1600 {
     width: 100%;
     max-width: var(--wrapper-width, 1600px);
-    padding: 40px 0 0;
+    padding: 0;
     margin: 0 auto 60px;
 
     color: var(--text-color-main, #000000);
@@ -30,7 +61,7 @@ body {
     text-align: left;
 }
 
-.main__content {
+.wrapper-1080 {
     width: 100%;
     max-width: var(--content-width, 1080px);
     margin: 0 auto 100px;
@@ -58,8 +89,12 @@ body {
 }
 
 @media (max-width: 1600px) {
-    .main__wrapper {
-        padding: 92px 40px 0;
+    .main {
+        padding-top: 0;
+    }
+
+    .wrapper-1600 {
+        padding: 0 40px 0;
     }
 }
 
@@ -70,7 +105,7 @@ body {
 }
 
 @media (max-width: 1120px) {
-    .main__content {
+    .wrapper-1080 {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -82,10 +117,9 @@ body {
     }
 }
 
-
 @media (max-width: 768px) {
-    .main__wrapper {
-        padding: 70px 14px 0;
+    .wrapper-1600 {
+        padding: 0 14px 0;
         margin-bottom: 40px;
     }
 

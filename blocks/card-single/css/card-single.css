@@ -12,11 +12,6 @@
     background-color: #F5F5F5;
 }
 
-.wrapper {
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
 .card-single__image {
     width: 100%;
     height: auto;
