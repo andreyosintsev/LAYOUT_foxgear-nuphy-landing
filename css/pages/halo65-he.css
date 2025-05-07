@@ -88,9 +88,21 @@ body {
     margin-top: 220px;
 }
 
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
 @media (max-width: 1600px) {
     .main {
-        padding-top: 0;
+        padding-top: 70px;
     }
 
     .wrapper-1600 {
