@@ -69,32 +69,13 @@
 
     --text-line-height-section: 36px;
     --text-line-height-large:   24px;
-    --text-line-height-main:    18px;
     --text-line-height-footer:  23px;
+    --text-line-height-specs:   22px;
+    --text-line-height-main:    18px;
+   
 
     --text-line-height-section_mobile: 33px;
     --text-line-height-footer_mobile:  20px;
-
-
-
-    /* Не используются */
-
-    --text-size-large:                  22px;
-    --text-size-small:                  16px;
-
-    --text-size-large_mobile:           16px;
-    --text-size-main_mobile:            14px;
-    --text-size-small_mobile:           14px;
-    --text-size-smaller_mobile:         12px;
-
-    
-
-    --text-line-height-small:           24px;
-
-    --text-line-height-large_mobile:    22px;
-    --text-line-height-main_mobile:     25px;
-    --text-line-height-small_mobile:    16px;
-    --text-line-height-smaller_mobile:  14px;
 
 /*
     Фоны
@@ -115,18 +96,6 @@
     --border-radius-card:           14px; /* card-product */
     --border-radius-menu-mobile:    14px; /* menu-mobile  */
     --border-radius-gallery-image:  14px; /* hero-single gallery image  */
-
-    /* Не используются */
-
-    --border-radius-video:          20px; /* popup  */
-    --border-radius-panel:          10px; /* panel  */
-
-    --border-radius-popup:          10px; /* popup  */
-    --border-radius-flex:           5px;  /* popup  */
-    --border-radius-button_mini:    4px;  /* button */
-    --border-radius-input:          4px;  /* input  */
-    --border-radius-review:         4px;  /* review */
-
 
 /*
     Ссылки

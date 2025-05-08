@@ -100,6 +100,11 @@ body {
     margin-bottom: 30px !important;
 }
 
+.in-the-box {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 1600px) {
     .main {
         padding-top: 70px;
