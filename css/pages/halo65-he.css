@@ -105,6 +105,10 @@ body {
     margin-bottom: 10px;
 }
 
+.tech-specs {
+    margin-bottom: 100px;
+}
+
 @media (max-width: 1600px) {
     .main {
         padding-top: 70px;
