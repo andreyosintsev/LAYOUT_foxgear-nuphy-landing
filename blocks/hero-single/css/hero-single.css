@@ -1,6 +1,6 @@
 .hero-single {
     display: grid;
-    grid-template-columns: 84px 10px auto 60px auto;
+    grid-template-columns: 84px 15px auto 67px auto;
     grid-template-areas: "hero-gallery hero-gap1 hero-images hero-gap2 hero-panel";
     width: 100%;
     max-width: 100%;
@@ -47,7 +47,7 @@
 
 .hero-single__images {
     grid-area: hero-images;
-    width: clamp(360px, calc(360px + 485 * ((100vw - 769px) / 831)), 845px)
+    width: clamp(333px, calc(62.69vw - 149px), 854px);
 }
 
 .hero-single__image {

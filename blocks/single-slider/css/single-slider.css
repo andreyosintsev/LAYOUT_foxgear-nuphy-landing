@@ -3,7 +3,7 @@
     display: block;
     width: 100%;
     max-width: var(--max-content-width, 1920px);
-    margin: 0 auto 100px;
+    margin: 0;
 }
 
 .single-slider__button {

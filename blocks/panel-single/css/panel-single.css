@@ -1,6 +1,6 @@
 .panel-single {
     display: block;
-    width: clamp(173px, calc(48.9vw - 202.55px), 580px);
+    width: clamp(190px, calc(37.3vw - 97px), 500px);
     padding: 0;
 
     color: var(--text-color-main, #000000);
@@ -64,12 +64,12 @@
     }
 
     .panel-single__description {
-        padding-bottom: 25px;
+        padding-bottom: 20px;
         margin-bottom: 25px;
     }
 
     .panel-single__title {
-        margin: 9px 0 6px 0;
+        margin: 20px 0 6px 0;
     
         font-family: var(--text-family-menu, sans-serif);
         font-size: 30px;

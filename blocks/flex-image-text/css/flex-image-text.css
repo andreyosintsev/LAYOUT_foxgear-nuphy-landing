@@ -34,9 +34,9 @@
 
 .flex-image-text__icon {
     width: 42px;
-    height: auto
+    height: auto;
+    margin-top: 20px;
 }
-
 
 .flex-image-text__title {
     margin: 0;
@@ -86,7 +86,7 @@
 
     .flex-image-text__icon {
         width: 40px;
-        height: auto
+        margin-top: 0;
     }
 
     .flex-image-text__title {
