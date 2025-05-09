@@ -83,6 +83,7 @@
 
     --background-color-main: var(--white);
     --background-color-gray: var(--off-white);
+    --background-color-black: var(--black);
     --background-color-menu: var(--white);
     --background-color-inverted: var(--black);
 
