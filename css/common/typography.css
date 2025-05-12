@@ -56,3 +56,27 @@
 .p-link:hover {
     color: var(--link-normal-color_hover, #FFA366); 
 }
+
+body.page-dark {
+    .p-declaration {
+        color: var(--gray, #656565);
+    }
+
+    .p-superscript {
+        color: var(--gray-light, #000000);
+    }
+
+    .p-strong {
+        color: var(--white, #000000);
+    }
+
+    .p-link {
+        color: var(--violet, #F76500);
+    }
+
+    .p-text {
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
