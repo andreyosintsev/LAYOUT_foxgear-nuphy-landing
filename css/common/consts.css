@@ -9,6 +9,8 @@
     --max-content-width:        1920px;
     --wrapper-width:            1600px;
     --content-width:            1080px;
+    --tech-table-width:         1200px;
+
 
 /*
     Основная палитра
@@ -18,6 +20,7 @@
     --gray-darker:              #252525; /* section title page*/
     --gray-dark:                #3C3C3C; /* back to top */
     --gray:                     #656565; /* description */
+    --gray-medium:              #b7b7b7; /* p declaration */
     --gray-light:               #D2D7D7; /* description */
     --gray-neutral:             #DCE2E1; /* p declaration */
     --gray-lighter:             #E8E8E1; /* review background */
@@ -49,6 +52,7 @@
     --text-color-main:          var(--black);
     --text-color-inverted:      var(--white);
     --text-color-menu:          var(--black);
+    --text-color-title-table:   var(--gray-darker);
 
     --text-family-main:         Roboto, arial, sans-serif;
     --text-family-menu:         'Roboto Condensed', arial, sans-serif;
@@ -96,17 +100,17 @@
     --background-color-menu: var(--white);
     --background-color-inverted: var(--black);
     --background-color-card: var(--gray-deep-dark);
-
+    --background-color-table: var(--off-white);
 /*
     Рамки
-*/
-
+*/  --border-color-table:           var(--gray-medium);
     --border-radius-hero-image:     20px; /* hero-single image  */
     --border-radius-hero-slider:    16px; /* hero-slider  */
     --border-radius-button:         14px; /* panel  */
     --border-radius-card:           14px; /* card-product */
     --border-radius-menu-mobile:    14px; /* menu-mobile  */
     --border-radius-gallery-image:  14px; /* hero-single gallery image  */
+    --border-radius-table:          4px; /* table  */
 
 /*
     Ссылки
