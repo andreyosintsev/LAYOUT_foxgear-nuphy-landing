@@ -14,6 +14,7 @@
     Основная палитра
 */
     --black:                    #000000; /* main text */
+    --gray-deep-dark:           #171717;   /*for cards (faster) */
     --gray-darker:              #252525; /* section title page*/
     --gray-dark:                #3C3C3C; /* back to top */
     --gray:                     #656565; /* description */
@@ -27,6 +28,9 @@
     --green:                    #00DFA9; /* button selected */
     --orange-light:             #FFA366; /* text link hover*/
     --orange:                   #F76500; /* text link */ 
+
+    --violet:                   #7671ff; /* title */ 
+    --violet-light:             #a29ff3;
 
     /* Не используются */
 
@@ -77,6 +81,11 @@
     --text-line-height-section_mobile: 33px;
     --text-line-height-footer_mobile:  20px;
 
+    /* Для тёмного фона */
+
+    --special-title: var(--violet); 
+
+
 /*
     Фоны
 */
@@ -86,6 +95,7 @@
     --background-color-black: var(--black);
     --background-color-menu: var(--white);
     --background-color-inverted: var(--black);
+    --background-color-card: var(--gray-deep-dark);
 
 /*
     Рамки
@@ -106,6 +116,9 @@
     --link-normal-color_hover:      var(--orange-light);
     --link-normal-color_disabled:   var(--gray);
 
+    /* Для тёмного фона */
+     --link-normal-color-dark-bk:   var(--violet);
+     --link-normal-color_hover-dark-bk: var(--violet-light);
 /*
     Кнопки
 */
