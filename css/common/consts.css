@@ -148,8 +148,4 @@ body.page-dark {
     .section-title {
         color: var(--violet, #000000);
     }
-
-    .wrapper_gray {
-        background-color: #171717;
-    }
 }

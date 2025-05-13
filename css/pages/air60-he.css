@@ -31,6 +31,7 @@ body {
     width: 100%;
 
     background-color: var(--background-color-main, #FFFFFF);
+    margin: 0 auto;
 }
 
 .wrapper_white {
@@ -48,6 +49,10 @@ body {
     min-height: 320px;
 
     background-color: var(--background-color-gray, #F5F5F5);
+}
+
+.wrapper_gray-darker {
+    background-color: #171717;
 }
 
 .wrapper_gray .wrapper-1600 {
@@ -96,6 +101,10 @@ body {
 
 .section-title-page {
     margin-bottom: 20px;
+}
+
+.pt-60 {
+    padding-top: 60px;
 }
 
 .mt-40 {
