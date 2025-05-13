@@ -89,7 +89,7 @@ body {
 }
 
 .comparison-images {
-    margin-bottom: 30px;
+    margin: 0 auto;
 }
 
 .section {
@@ -98,7 +98,6 @@ body {
 
 .section-title-page {
     color: var(--text-color-inverted, #FFFFFF);
-    margin-bottom: 20px;
 }
 
 .p-strong {
@@ -141,6 +140,10 @@ body {
     margin-bottom: 30px !important;
 }
 
+.mt-65 {
+    margin-top: 65px !important;
+}
+
 .in-the-box {
     margin-top: 100px;
     margin-bottom: 10px;
@@ -178,6 +181,8 @@ body {
         margin-top: 140px;
     }
 }
+
+
 
 @media (max-width: 768px) {
     .wrapper-1600 {

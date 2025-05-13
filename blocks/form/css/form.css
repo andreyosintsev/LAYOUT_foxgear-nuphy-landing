@@ -30,9 +30,9 @@
 }
 
 .form__radio-button {
-    position: relative;
-    display: inline-block;
-    margin: 0 10px 36px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .form__label {
@@ -75,7 +75,8 @@
         line-height: 24px;
     }
 
-    .form__radio-button {
-        margin: 10px 10px 20px 0;
+    .form__radio-group {
+        flex-direction: column;
+        gap: 12px;
     }
 }
