@@ -31,6 +31,7 @@
     --green:                    #00DFA9; /* button selected */
     --orange-light:             #FFA366; /* text link hover*/
     --orange:                   #F76500; /* text link */ 
+    --violet:                   #7671ff; /* text link dark */ 
 
     --violet:                   #7671ff; /* title */ 
     --violet-light:             #a29ff3;
@@ -152,4 +153,16 @@
     --button-gray-background-color:           var(--gray-dark);
     --button-gray-background-color_hover:     var(--orange);
     --button-gray-border-color:               var(--gray-dark);
+}
+
+body.page-dark {
+    --gray-darker: var(--white);
+
+    .card-single {
+        background-color: #171717;
+    }
+
+    .section-title {
+        color: var(--violet, #000000);
+    }
 }

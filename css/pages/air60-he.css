@@ -31,6 +31,7 @@ body {
     width: 100%;
 
     background-color: var(--background-color-main, #FFFFFF);
+    margin: 0 auto;
 }
 
 .wrapper_white {
@@ -50,6 +51,10 @@ body {
     background-color: var(--background-color-gray, #F5F5F5);
 }
 
+.wrapper_gray-darker {
+    background-color: #171717;
+}
+
 .wrapper_gray .wrapper-1600 {
     margin: 0;
 }
@@ -58,7 +63,8 @@ body {
     width: 100%;
     max-width: var(--wrapper-width, 1600px);
     padding: 0;
-    margin: 0 auto 60px;
+    margin: 0 auto;
+    padding-bottom: 60px;
 
     color: var(--text-color-main, #000000);
 
@@ -68,7 +74,8 @@ body {
 .wrapper-1080 {
     width: 100%;
     max-width: var(--content-width, 1080px);
-    margin: 0 auto 100px;
+    margin: 0 auto;
+    padding-bottom: 100px;
 
     color: var(--text-color-main, #000000);
 
@@ -94,6 +101,10 @@ body {
 
 .section-title-page {
     margin-bottom: 20px;
+}
+
+.pt-60 {
+    padding-top: 60px;
 }
 
 .mt-40 {
