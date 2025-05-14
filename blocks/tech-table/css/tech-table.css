@@ -1,7 +1,7 @@
 .accordion {
   width: 100%;
   color: var(--text-color-title-table, #252525);
-  font-family: var(--text-family-main, sans-serif);
+  font-family: var(--text-family-menu, sans-serif);
   font-size: var(--text-size-main, 16px);
   font-weight: var(--text-weight-main, 400);
   background-color: var(--white, #FFFFFF);
@@ -37,8 +37,6 @@
 .accordion__item_active .accordion__item-title::after {
   transform: translateY(-50%) rotate(-225deg);
 }
-
-
 
 .accordion__item-content {
   overflow: hidden;
