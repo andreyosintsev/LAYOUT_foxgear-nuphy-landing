@@ -38,6 +38,8 @@ body {
 }
 
 .wrapper_black {
+    padding-bottom: 1px;
+
     background-color: var(--background-color-black, #000000);
 }
 
@@ -50,7 +52,7 @@ body {
     background-color: var(--background-color-gray, #F5F5F5);
 }
 
-.wrapper-gray-deep-dark{
+.wrapper-gray-deep-dark {
     background-color: var(--background-color-card, #171717);
 }
 
@@ -127,6 +129,9 @@ body {
 }
 }
 
+.mt-0 {
+    margin-top: 0 !important;
+}
 
 .mt-40 {
     margin-top: 40px !important;
@@ -144,6 +149,18 @@ body {
     margin-top: 65px !important;
 }
 
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.pt-40 {
+    padding-top: 40px !important;
+}
+
 .in-the-box {
     margin-top: 100px;
     margin-bottom: 10px;
@@ -152,6 +169,15 @@ body {
 .tech-specs {
     margin-bottom: 100px;
 }
+
+.back-to-top path {
+    fill: var(--gray-dark, #747474);
+}
+
+.back-to-top:hover path {
+    fill: var(--gray, #A6A6A6);
+}
+
 
 @media (max-width: 1600px) {
     .main {

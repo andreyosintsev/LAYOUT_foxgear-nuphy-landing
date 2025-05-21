@@ -16,7 +16,7 @@
     Основная палитра
 */
     --black:                    #000000; /* main text */
-    --gray-deep-dark:           #171717;   /*for cards (faster) */
+    --gray-deep-dark:           #171717; /* for cards (faster) */
     --gray-darker:              #252525; /* section title page*/
     --gray-dark:                #3C3C3C; /* back to top */
     --gray:                     #656565; /* description */
