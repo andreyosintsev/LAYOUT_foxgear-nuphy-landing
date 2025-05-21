@@ -159,7 +159,7 @@ body.page-dark {
     --gray-darker: var(--white);
 
     .card-single {
-        background-color: #171717;
+        background-color: #101010;
     }
 
     .section-title {
