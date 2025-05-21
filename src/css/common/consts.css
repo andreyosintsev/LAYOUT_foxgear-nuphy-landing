@@ -1,0 +1,121 @@
+@import url("./fonts.css");
+
+:root {
+
+/*
+    Размеры экрана
+*/
+
+    --max-content-width:        1920px;
+    --wrapper-width:            1600px;
+
+/*
+    Основная палитра
+*/
+
+    --black:                    #000000; /* main text */
+    --black-dark:               #2C2C2C; /* block panel background and border */
+    --black-light:              #3C3C3C; /* button hover */
+    --gray-dark:                #747474; /* gray button */
+    --gray:                     #A6A6A6; /* to collect */
+    --gray-light:               #EFEFEF; /* button outlined hover */
+    --off-white:                #F5F5F5; /* review background */
+    --white:                    #FFFFFF; /* background */
+
+    --red:                      #FF6666; /* form error */
+    --green:                    #1C9C4D; /* form success, blue button hover */
+    --blue:                     #4A90E2; /* blue button */
+    --orange:                   #EF714B; /* gray button hover */
+
+/*
+    Цвета блоков
+*/
+
+    --menu-main-background:     var(--white);
+
+/*
+    Шрифты
+*/
+
+    --text-color-main:          var(--black);
+    --text-color-inverted:      var(--white);
+    --text-color-menu:          var(--black-light);
+    --text-family-main:         Roboto, arial, sans-serif;
+    --text-family-menu:         'Roboto Condensed', arial, sans-serif;
+
+
+
+    --text-size-large:          22px;
+    --text-size-main:           20px;
+    --text-size-small:          16px;
+
+    /* --text-size-large_mobile:   16px;*/
+    --text-size-main_mobile:    18px;
+    --text-size-small_mobile:   14px;
+    --text-size-smaler_mobile:  12px;
+
+    --text-weight-main:         400;
+    --text-weight-strong:       600;
+    --text-weight-bold:         800;
+
+    --text-line-height-large:   32px;
+    --text-line-height-main:    30px;
+    --text-line-height-small:   24px;
+
+    /* --text-line-height-large_mobile:    22px;*/
+    --text-line-height-main_mobile:     25px;
+    --text-line-height-small_mobile:    16px;
+    --text-line-height-smaller_mobile:    14px;
+
+/*
+    Фоны
+*/
+
+    --background-color-main: var(--white);
+    --background-color-inverted: var(--black);
+
+/*
+    Рамки
+*/
+
+    --border-radius-video:          20px; /* popup  */
+    --border-radius-panel:          10px; /* panel  */
+    --border-radius-popup:          10px; /* popup  */
+    --border-radius-button:         8px;  /* button */
+    --border-radius-flex:           5px;  /* popup  */
+    --border-radius-button_mini:    4px;  /* button */
+    --border-radius-input:          4px;  /* input  */
+    --border-radius-review:         4px;  /* review */
+
+
+/*
+    Ссылки
+*/
+    --link-normal-color:            var(--black-light);
+    --link-normal-color_hover:      var(--black-light);
+    --link-normal-color_disabled:   var(--gray);
+
+/*
+    Кнопки
+*/
+
+    --button-normal-color:                    var(--white);
+    --button-normal-background-color:         var(--black);
+    --button-normal-background-color_hover:   var(--black-light);
+    --button-normal-border-color:             var(--black);
+
+    --button-outlined-color:                  var(--black);
+    --button-outlined-background-color:       var(--white);
+    --button-outlined-background-color_hover: var(--gray-light);
+    --button-outlined-border-color:           var(--black);
+
+    --button-blue-color:                      var(--white);
+    --button-blue-background-color:           var(--blue);
+    --button-blue-background-color_hover:     var(--green);
+    --button-blue-border-color:               var(--blue);
+
+    --button-gray-color:                      var(--white);
+    --button-gray-background-color:           var(--gray-dark);
+    --button-gray-background-color_hover:     var(--orange);
+    --button-gray-border-color:               var(--gray-dark);
+}
