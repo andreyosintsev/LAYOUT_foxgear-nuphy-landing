@@ -17,34 +17,22 @@
                             item.classList.remove('accordion__item_active');
                         } else {
                             item.classList.add('accordion__item_active');
-                            content.style.maxHeight = content.scrollHeight + 'px'; //
+                            content.style.maxHeight = content.scrollHeight + 'px';
                         }
                     }
                 )
             )
         })
 
-        window.addEventListener('resize', resize);
+        window.addEventListener('resize', accordionContentResize);
     });
 
-    function resize() {
-        const accordions = document.querySelectorAll('.accordion');
+    function accordionContentResize() {
+        const activeAccordionItems = document.querySelectorAll('.accordion__item_active');
 
-        accordions.forEach(accordion => {
-            const accordionItemTitles = accordion.querySelectorAll('.accordion__item-title');
-            accordionItemTitles.forEach(accordionItemTitle => {
-                const item = accordionItemTitle.closest('.accordion__item');
-
-                if (item.classList.contains('accordion__item_active')) {
-                    const content = item.querySelector('.accordion__item-content');
-                    if (!content) {
-                        return console.error('DOM: no .accordion__item-content element found');
-                    }
-
-                    content.style.maxHeight = content.scrollHeight + 'px'; //
-                }
-            })
-        })
+        activeAccordionItems.forEach(accordionItem => {
+            const content = accordionItem.querySelector('.accordion__item-content');
+            if (content) content.style.maxHeight = content.scrollHeight + 'px';
+        });
     }
-
 })();
