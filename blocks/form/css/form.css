@@ -29,7 +29,7 @@
 }
 
 .form__legend {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     font-size: var(--text-size-legend, 18px);    
     font-weight: var(--text-weight-bold, 700);
@@ -49,6 +49,8 @@
     padding: 12px;
 
     font-size: 15px;
+
+    line-height: 1.2;
 
     border: 3px solid transparent;
     border-radius: var(--border-radius-button, 14px);

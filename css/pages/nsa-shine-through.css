@@ -27,6 +27,10 @@ body {
     padding-top: 72px;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .wrapper {
     width: 100%;
 

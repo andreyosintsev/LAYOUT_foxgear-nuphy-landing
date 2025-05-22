@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="blocks/tech-specs/css/tech-specs.css">
     <link rel="stylesheet" href="blocks/footer/css/footer.css">
     <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css">
+    <link rel="stylesheet" href="blocks/popup/css/popup.css">
     <link rel="stylesheet" href="css/pages/air60-he.css">
 </head>
 <body class="page-dark">
@@ -251,7 +252,7 @@
                                             type="radio" 
                                             id="form__radio_coral" 
                                             name="switch"
-                                            value="Magnetic Coral"
+                                            value="Низкопрофильные Magnetic Jade"
                                             checked>
                                     <label class="form__label" for="form__radio_coral">Низкопрофильные Magnetic Jade</label>
                                 </div>
@@ -260,7 +261,7 @@
                                             type="radio" 
                                             id="form__radio_jade" 
                                             name="switch"
-                                            value="Magnetic Jade Pro">
+                                            value="Низкопрофильные Magnetic Jade Pro">
                                     <label class="form__label" for="form__radio_jade">Низкопрофильные Magnetic Jade Pro</label>
                                 </div>
                             </fieldset>
@@ -282,7 +283,11 @@
                                     </div>
                                 </li>
                             </ul>
-                            <button class="button button_buy" type="button">КУПИТЬ</button>
+                            <button class="button button_buy"
+                                    type="button"
+                                    data-product="NuPhy Air60 HE">
+                                    КУПИТЬ
+                            </button>
                         </form>
                         <div class="panel-single__features">
                             <div class="panel-single__features-header">
@@ -970,6 +975,56 @@
         <div class="footer__motto">
             &copy; 2025 NuPhy | Беспроводные механические клавиатуры для Maс и Windows
         </div>
+        <div class="popup hidden" id="popup-order">
+            <div class="loader hidden"></div>
+            <h2 class="h2 popup__heading">
+                Оставьте заявку
+            </h2>
+            <p class="popup__product"></p>
+            <form class="form popup__form">
+                <input class="form__input" name="name" placeholder="Ваше имя">
+                <input class="form__input" name="tel" placeholder="Телефон">
+                <input class="form__input" name="email" placeholder="E-mail">
+                <input type="hidden" name="product">
+                <div class="form__submit">
+                    <input class="button form__button" type="submit" value="Отправить">
+                    <div class="form__offer">
+                        Нажимая кнопку &ldquo;Отправить&rdquo;<br>
+                        вы соглашаетесь с <a class="form__link" href="#" title="Текст публичной оферты" target="_blank">публичной офертой</a>
+                    </div>
+                </div>
+            </form>
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup popup_success hidden" id="popup-success">
+            <h2 class="h2 popup__heading popup__heading_success">
+                Успешно отправлено
+            </h2>
+            <p class="popup__text">
+                Ваше запрос было успешно отправлен.
+            </p>
+            <p class="popup__text">
+                В ближайшее время наш менеджер свяжется с Вами и предоставит всю необходимую информацию.
+            </p>
+            <p class="popup__text">
+                Благодарим за обращение!
+            </p>        
+        </div>
+        <div class="popup popup_failed hidden" id="popup-failed">
+            <h2 class="h2 popup__heading popup__heading_failed">
+                Сообщение не отправлено
+            </h2>
+            <p class="popup__text">
+                К сожалению, Ваш запрос отправить не удалось.
+            </p>
+            <p class="popup__text">
+                Но мы знаем о проблеме, и совсем скоро её устраним. Попробуйте ещё раз отправить обращение позже.
+            </p>
+            <p class="popup__text">
+                Просим прощения за доставленные неудобства.
+            </p>        
+        </div>
+        <div class="overlay hidden"></div>
     </footer>
     <div class="back-to-top invisible">
         <svg width="35px" height="35px" role="button" aria-label="Наверх" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"></path></svg>
@@ -984,6 +1039,7 @@
     <script src="scripts/accordion.js"></script>
     <script src="scripts/carousels.js"></script>
     <script src="scripts/single-slider.js"></script>
+    <script src="scripts/popup.js"></script>
 
     <script>
         $(function(){

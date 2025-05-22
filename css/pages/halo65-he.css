@@ -23,6 +23,10 @@ body {
     display: none !important;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .main {
     padding-top: 72px;
 }
