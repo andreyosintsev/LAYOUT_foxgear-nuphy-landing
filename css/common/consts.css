@@ -165,4 +165,12 @@ body.page-dark {
     .section-title {
         color: var(--violet, #000000);
     }
+
+    .back-to-top path {
+        fill: var(--gray-dark, #747474);
+    }
+
+    .back-to-top:hover path {
+        fill: var(--gray, #A6A6A6);
+    }
 }

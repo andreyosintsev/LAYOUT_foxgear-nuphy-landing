@@ -14,10 +14,18 @@
 }
 
 .form__fieldset {
-    display: block;
+    /* display: block;
     padding: 0;
 
-    border: none;
+    border: none; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+
+    border: 0;
 }
 
 .form__legend {
@@ -36,7 +44,8 @@
 }
 
 .form__label {
-    margin: 0 0 10px 0;
+    /* margin: 0 0 10px 0; */
+    margin: 0;
     padding: 12px;
 
     font-size: 15px;
