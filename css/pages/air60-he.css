@@ -123,6 +123,10 @@ body {
     margin-bottom: 30px !important;
 }
 
+.mb-0 {
+    margin-bottom: 0 !important;    
+}
+
 .in-the-box {
     margin-top: 100px;
     margin-bottom: 10px;
