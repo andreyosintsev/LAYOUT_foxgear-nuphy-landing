@@ -61,6 +61,12 @@ body {
     text-align: left;
 }
 
+.wrapper-1270 {
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto 100px;
+}
+
 .wrapper-1080 {
     width: 100%;
     max-width: var(--content-width, 1080px);
@@ -126,6 +132,12 @@ body {
 @media (max-width: 1440px) {
     .section {
         margin-top: 180px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .wrapper-1270 {
+        padding: 0 40px 0;
     }
 }
 

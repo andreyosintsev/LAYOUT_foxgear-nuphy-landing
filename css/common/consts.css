@@ -20,7 +20,7 @@
     --gray-darker:              #252525; /* section title page*/
     --gray-dark:                #3C3C3C; /* back to top */
     --gray:                     #656565; /* description */
-    --gray-medium:              #b7b7b7; /* p declaration */
+    --gray-medium:              #B7B7B7; /* p declaration */
     --gray-light:               #D2D7D7; /* description */
     --gray-neutral:             #DCE2E1; /* p declaration */
     --gray-lighter:             #E8E8E1; /* review background */
@@ -102,6 +102,7 @@
     --background-color-inverted: var(--black);
     --background-color-card: var(--gray-deep-dark);
     --background-color-table: var(--off-white);
+
 /*
     Рамки
 */  --border-color-table:           var(--gray-medium);
