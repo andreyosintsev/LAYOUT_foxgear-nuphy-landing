@@ -14,14 +14,8 @@
 }
 
 .form__fieldset {
-    /* display: block;
-    padding: 0;
-
-    border: none; */
-
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     margin-bottom: 20px;
     padding: 0;
 
@@ -40,7 +34,8 @@
 .form__radio-button {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .form__label {

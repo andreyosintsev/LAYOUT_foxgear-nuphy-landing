@@ -136,6 +136,43 @@ body {
     margin-bottom: 100px;
 }
 
+.card-single {
+    background-color: #101010;
+}
+
+.section-title {
+    color: var(--violet, #000000);
+}
+
+.back-to-top path {
+    fill: var(--gray-dark, #747474);
+}
+
+.back-to-top:hover path {
+    fill: var(--gray, #A6A6A6);
+}
+.p-declaration {
+    color: var(--gray, #656565);
+}
+
+.p-superscript {
+    color: var(--gray-light, #000000);
+}
+
+.p-strong {
+    color: var(--white, #000000);
+}
+
+.p-link {
+    color: var(--violet, #F76500);
+}
+
+.p-text {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 @media (max-width: 1600px) {
     .main {
         padding-top: 70px;
