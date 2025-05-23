@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+body {
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-main, sans-serif);
+    font-size: var(--text-size-main, 14px);
+    font-weight: var(--text-weight-main, 400);
+
+    line-height: var(--text-line-height-main, 18px);
+
+    background-color: var(--background-color-main, #FFFFFF);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main {
+    padding-top: 90px;
+}
+
+
+.wrapper-1080 {
+    width: 100%;
+    max-width: var(--content-width, 1080px);
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+    color: var(--text-color-main, #000000);
+
+    text-align: left;
+}
+
+.agreement__title {
+    line-height: 1;
+}
+
+@media (max-width: 1600px) {
+    .main {
+        padding-top: 70px;
+    }
+
+    .wrapper-1080 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
