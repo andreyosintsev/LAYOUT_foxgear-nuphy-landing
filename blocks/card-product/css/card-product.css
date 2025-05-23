@@ -10,6 +10,12 @@
     font-weight: var(--text-weight-bold, 700);
 
     line-height: var(--text-line-height-large, 24px);
+
+    transition: transform 0.3s ease;
+}
+
+.card-product:hover {
+    transform: scale(1.02);
 }
 
 .hidden {
@@ -39,7 +45,7 @@
 
 .card-product__buttons {
     position: absolute;
-    display: block;
+    display: none;
     top: 14px;
     right: 8px;
 

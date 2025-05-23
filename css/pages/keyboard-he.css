@@ -57,6 +57,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     min-width: 580px;
+
+    overflow: hidden;
 }
 
 .card-product {
