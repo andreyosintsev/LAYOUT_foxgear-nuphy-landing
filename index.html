@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="blocks/card-product/css/card-product.css">
     <link rel="stylesheet" href="blocks/products/css/products.css">
     <link rel="stylesheet" href="blocks/card-publication/css/card-publication.css">
-    <link rel="stylesheet" href="blocks/publications/css/publications.css">
+    <link rel="stylesheet" href="blocks/contacts/css/contacts.css">
     <link rel="stylesheet" href="blocks/footer/css/footer.css">
     <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css">
     <link rel="stylesheet" href="css/pages/index.css">
@@ -68,7 +68,7 @@
                             Кейкапы
                         </a>
                     </li>
-                    <li class="menu-main__item">
+                    <li class="menu-main__item hidden">
                         <a class="menu-main__link" href="index.html#reviews" title="О нас пишут">
                             О нас
                         </a>
@@ -135,7 +135,7 @@
                         <div class="menu-mobile__item-arrow"></div>
                     </a>
                 </li>
-                <li class="menu-mobile__item">
+                <li class="menu-mobile__item hidden">
                     <a class="menu-mobile__item-link" 
                         href="#" 
                         title="О нас">
@@ -150,7 +150,7 @@
                 </li>
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link" 
-                        href="#" 
+                        href="index.html#contacts" 
                         title="Контакты">
                         <img class="menu-mobile__item-logo"
                               src="images/menu-mobile/menu-mobile-contacts.webp"
@@ -352,33 +352,42 @@
                         </div>
                     </div>
                 </section>
-                <section class="publications">
-                    <h2 class="section-title publications__title">Публикации о нас</h2>
-                    <div class="publications__publications">
-                        <div class="card-publication publications__publication">
-                            <img class="card-publication__logo"
-                                src="images/publications/publication-01.jpg"
-                                alt="Логотип Wired">
-                            <a class="card-publication__link" 
-                                href="#" 
-                                title="Обзор клавиатуры NuPhy в Wired"></a>
+                <section class="contacts" id="contacts">
+                    <div class="contacts__info">
+                        <h2 class="section-title contacts__header">Контакты</h2>
+                        <div class="contacts__address">
+                            <p class="contacts__p">Электронная почта: <a class="contacts__email" href="mailto:info@foxgamer.ru">info@foxgamer.ru</a></p>
+                            <p class="contacts__p">
+                                <a class="contacts__tel" href="tel:+74952595878">+7 (495) 259-58-78</a>
+                                <a class="contacts__tel" href="tel:+74952595878">+7 (495) 899-07-96</a>
+                            </p>
                         </div>
-                        <div class="card-publication publications__publication">
-                            <img class="card-publication__logo"
-                                src="images/publications/publication-02.jpg"
-                                alt="Логотип Hyperbeast">
-                            <a class="card-publication__link" 
-                                href="#" 
-                                title="Обзор клавиатуры NuPhy в Hyperbeast"></a>
+                        <div class="contacts__afterword">
+                            Мы поможем подобрать идеальную клавиатуру и аксессуары для вас.
                         </div>
-                        <div class="card-publication publications__publication">
-                            <img class="card-publication__logo"
-                                src="images/publications/publication-03.jpg"
-                                alt="Логотип Appleinsider">
-                            <a class="card-publication__link" 
-                                href="#" 
-                                title="Обзор клавиатуры NuPhy в Appleinsider"></a>
-                        </div>
+                        <ul class="contacts__socials">
+                            <li class="contacts__social contacts__social_telegram">
+                                <a class="contacts__social-link"
+                                    href="#"
+                                    title="Мы в Telegram">
+                                </a>
+                            </li>
+                            <li class="contacts__social contacts__social_instagram">
+                                <a class="contacts__social-link"
+                                    href="#"
+                                    title="Мы в Instagram*">
+                                </a>
+                            </li>
+                            <li class="contacts__social contacts__social_vk">
+                                <a class="contacts__social-link"
+                                    href="#"
+                                    title="Мы ВКонтакте">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=mymaps%3AmtfhU9h9r-a8w_lkm3sE7-SGyp2FltTc&amp;width=100%25&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </section>
             </div>
@@ -447,7 +456,7 @@
             </div>
         </div>
         <div class="footer__motto">
-            &copy; 2025 NuPhy | Беспроводные механические клавиатуры для Maс и Windows
+            &copy; 2025 NuPhy | Клавиатуры для Maс и Windows
         </div>
     </footer>
     <div class="back-to-top invisible">
