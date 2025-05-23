@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    filterOptions();
+    
     const checkboxCategories = document.querySelectorAll('.panel-categories__checkbox');
-    let options = '';
-
     checkboxCategories.forEach(checkbox => checkbox.addEventListener('change', getOptions));
-
     
     function getOptions() {
         optionsArray = Array.from(document.querySelectorAll('.panel-categories__checkbox:checked'))
