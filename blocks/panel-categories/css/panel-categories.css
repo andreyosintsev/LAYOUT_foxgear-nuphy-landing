@@ -1,0 +1,129 @@
+.panel-categories {
+    display: inline-block;
+
+    padding: 0;
+
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-main, sans-serif);
+    font-size: var(--text-size-single, 16px);
+    font-weight: var(--text-weight-main, 400);
+
+    line-height: var(--text-line-height-large, 24px);
+
+    background-color: var(--background-color-main, #FFFFFF);
+}
+
+.panel-categories__title {
+    margin: 20px 0;
+    padding-bottom: 23px;
+
+    border-bottom: 1px solid var(--gray-medium, #B7B7B7);
+}
+
+.panel-categories__option {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 4px;
+    
+    font-size: 16px;
+    
+    user-select: none;
+    cursor: pointer;
+}
+
+.panel-categories__checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.panel-categories__checkmark {
+    position: relative;
+    height: 18px;
+    width: 18px;
+    margin-right: 6px;
+    background-color: var(--white, #FFFFFF);
+    border: 2px solid #ccc;
+    border-radius: var(--border-radius-table, 4px);
+}
+
+.panel-categories__option .panel-categories__checkmark::after {
+    content: "";
+    
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+
+    background-color: var(--black, #000000);
+
+    display: none;
+}
+
+.panel-categories__option  .panel-categories__checkbox:checked + .panel-categories__checkmark::after {
+    display: block;
+}
+
+.accordion__item-title {
+    padding: 0 46px 0 0;
+
+    text-transform: none;
+}
+
+.accordion__item-title::after {
+    top: 70%;
+}
+
+.accordion__item-content {
+    padding: 10px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .panel-categories {
+        font-size: var(--text-size-single_mobile, 15px);
+    }
+
+    .panel-categories__description {
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+    }
+
+    .panel-categories__title {
+        margin: 20px 0 6px 0;
+    
+        font-family: var(--text-family-menu, sans-serif);
+        font-size: 30px;
+    
+        line-height: 33px;
+    }
+
+    .panel-categories__subtitle {
+        margin-bottom: 0px;
+    
+        font-size: 16px;
+    }
+
+    .panel-categories__rating {
+        margin-bottom: 0;
+    }
+
+    .panel-categories__price {
+        font-size: 17px;
+    
+        line-height: 26px;
+    }
+
+    .panel-categories__features-list {
+        padding-left: 30px;
+    }
+
+    .panel-categories__feature {
+        line-height: 20px;
+    }
+}
