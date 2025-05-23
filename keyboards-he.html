@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="blocks/button/css/button.css">
     <link rel="stylesheet" href="blocks/section-title/css/section-title.css">
     <link rel="stylesheet" href="blocks/rating/css/rating.css">
+    <link rel="stylesheet" href="blocks/accordion/css/accordion.css">
+    <link rel="stylesheet" href="blocks/panel-categories/css/panel-categories.css">
     <link rel="stylesheet" href="blocks/card-product/css/card-product.css">
     <link rel="stylesheet" href="blocks/products/css/products.css">
     <link rel="stylesheet" href="blocks/card-publication/css/card-publication.css">
@@ -25,7 +27,7 @@
     <header class="header">
         <div class="wrapper header__wrapper">
             <div class="logo header__logo">
-                <a class="logo__link" href="#" title="Клавиатуры NuPhy - главная страница">
+                <a class="logo__link" href="index.html" title="Клавиатуры NuPhy - главная страница">
                     <img class="logo__image" 
                         src="images/logo/logo.webp" 
                         alt="Логотип NuPhy">
@@ -33,13 +35,13 @@
             </div>
             <nav class="menu-main header__menu-main">
                 <ul class="menu-main__items">
-                    <li class="menu-main__item">
+                    <li class="menu-main__item hidden">
                         <a class="menu-main__link" href="keyboards.html" title="Клавиатуры NuPhy">
                             Клавиатуры
                         </a>
                     </li>
                     <li class="menu-main__item menu-main__item_dropdown">
-                        <a class="menu-main__link" title="Клавиатуры HE">
+                        <a class="menu-main__link" href="keyboards-he.html" title="Клавиатуры HE">
                             Клавиатуры с магнитными переключателями
                         </a>
                         <div class="menu-dropdown hidden">
@@ -95,7 +97,7 @@
     <div class="menu-mobile transparent">
         <div class="menu-mobile__content">
             <ul class="menu-mobile__items">
-                <li class="menu-mobile__item">
+                <li class="menu-mobile__item hidden">
                     <a class="menu-mobile__item-link" 
                         href="#" 
                         title="Клавиатуры">
@@ -110,7 +112,7 @@
                 </li>
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link" 
-                        href="#" 
+                        href="keyboards-he.html" 
                         title="Клавиатуры с магнитными переключателями">
                         <img class="menu-mobile__item-logo"
                               src="images/menu-mobile/menu-mobile-keyboards-he.webp"
@@ -168,11 +170,153 @@
             <div class="wrapper-1600">
                 <div class="product-selector">
                     <div class="panel-categories">
-                        <h2 class="section-title products__title">Клавиатуры HE</h2>
+                        <h2 class="section-title panel-categories__title">Клавиатуры HE</h2>
+                        <div class="accordion panel-categories__content">
+                            <div class="accordion__content">
+                                <div class="accordion__item accordion__item_active">
+                                    <div class="accordion__item-title">
+                                        Профиль клавиатуры
+                                    </div>
+                                    <div class="accordion__item-content">
+                                        <div class="panel-categories__options">
+                                            <label class="panel-categories__option">
+                                                <input class="panel-categories__checkbox"
+                                                        type="checkbox"
+                                                        id="profile-low">
+                                                <span class="panel-categories__checkmark"></span>
+                                                Низкий профиль
+                                            </label>
+                                            <label class="panel-categories__option">
+                                                <input class="panel-categories__checkbox"
+                                                        type="checkbox"
+                                                        id="profile-normal">
+                                                <span class="panel-categories__checkmark"></span>
+                                                Нормальный профиль
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item accordion__item_active">
+                                    <div class="accordion__item-title">
+                                        Серия
+                                    </div>
+                                    <div class="accordion__item-content">
+                                        <div class="panel-categories__options">
+                                            <label class="panel-categories__option">
+                                                <input class="panel-categories__checkbox"
+                                                        type="checkbox"
+                                                        id="serie-air">
+                                                <span class="panel-categories__checkmark"></span>
+                                                Air
+                                            </label>
+                                            <label class="panel-categories__option">
+                                                <input class="panel-categories__checkbox"
+                                                        type="checkbox"
+                                                        id="serie-halo">
+                                                <span class="panel-categories__checkmark"></span>
+                                                Halo
+                                            </label>
+                                            <label class="panel-categories__option">
+                                                <input class="panel-categories__checkbox"
+                                                        type="checkbox"
+                                                        id="serie-field">
+                                                <span class="panel-categories__checkmark"></span>
+                                                Field
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item accordion__item_active">
+                                    <div class="accordion__item-title">
+                                        Способ подключения
+                                    </div>
+                                    <div class="accordion__item-content">
+                                        <label class="panel-categories__option">
+                                            <input class="panel-categories__checkbox"
+                                                    type="checkbox"
+                                                    id="connectivity-wired">
+                                            <span class="panel-categories__checkmark"></span>
+                                            Проводное
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="accordion__item accordion__item_active">
+                                    <div class="accordion__item-title">
+                                        Размер
+                                    </div>
+                                    <div class="accordion__item-content">
+                                        <label class="panel-categories__option">
+                                            <input class="panel-categories__checkbox"
+                                                    type="checkbox"
+                                                    id="size-60">
+                                            <span class="panel-categories__checkmark"></span>
+                                            60%
+                                        </label>
+                                        <label class="panel-categories__option">
+                                            <input class="panel-categories__checkbox"
+                                                    type="checkbox"
+                                                    id="size-65">
+                                            <span class="panel-categories__checkmark"></span>
+                                            65%
+                                        </label>
+                                        <label class="panel-categories__option">
+                                            <input class="panel-categories__checkbox"
+                                                    type="checkbox"
+                                                    id="size-75">
+                                            <span class="panel-categories__checkmark"></span>
+                                            75%
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="accordion__item accordion__item_active">
+                                    <div class="accordion__item-title">
+                                        Раскладка
+                                    </div>
+                                    <div class="accordion__item-content">
+                                        <label class="panel-categories__option">
+                                            <input class="panel-categories__checkbox"
+                                                    type="checkbox"
+                                                    id="layout-ansi">
+                                            <span class="panel-categories__checkmark"></span>
+                                            ANSI
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="accordion__item accordion__item_active">
+                                    <div class="accordion__item-title">
+                                        Другое
+                                    </div>
+                                    <div class="accordion__item-content">
+                                        <label class="panel-categories__option">
+                                            <input class="panel-categories__checkbox"
+                                                    type="checkbox"
+                                                    id="more-hotswap">
+                                            <span class="panel-categories__checkmark"></span>
+                                            Горячая замена
+                                        </label>
+                                        <label class="panel-categories__option">
+                                            <input class="panel-categories__checkbox"
+                                                    type="checkbox"
+                                                    id="more-knob">
+                                            <span class="panel-categories__checkmark"></span>
+                                            Рукоятка
+                                        </label>
+                                        <label class="panel-categories__option">
+                                            <input class="panel-categories__checkbox"
+                                                    type="checkbox"
+                                                    id="more-raw">
+                                            <span class="panel-categories__checkmark"></span>
+                                            Raw
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
                     </div>
                     <section class="products">
                         <div class="products__cards">  
-                            <div class="card-product products__card">
+                            <div class="card-product products__card"
+                                 data-specs="profile-normal serie-halo connectivity-wired size-65 layout-ansi more-hotswap more-raw">
                                 <div class="card-product__image">
                                     <img class="card-product__image-img"
                                         src="images/products/halo65-he.webp"
@@ -213,7 +357,8 @@
                                 href="halo65-he.html"
                                 title="Купить клавиатуру NuPhy Halo65 HE"></a>
                             </div>
-                            <div class="card-product products__card">
+                            <div class="card-product products__card" 
+                                 data-specs="profile-low serie-air connectivity-wired size-60 layout-ansi more-hotswap">
                                 <div class="card-product__image">
                                     <img class="card-product__image-img"
                                         src="images/products/halo60-he.webp"
@@ -254,7 +399,8 @@
                                 href="air60-he.html"
                                 title="Купить клавиатуру NuPhy Air60 HE"></a>
                             </div>
-                            <div class="card-product products__card">
+                            <div class="card-product products__card"
+                                 data-specs="profile-low serie-air connectivity-wired size-75 layout-ansi more-hotswap">
                                 <div class="card-product__image">
                                     <img class="card-product__image-img"
                                         src="images/products/halo75-he.webp"
@@ -371,34 +517,9 @@
         <svg width="35px" height="35px" role="button" aria-label="Наверх" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"></path></svg>
     </div>
     
-    <script src="scripts/util/jquery-3.7.1.min.js"></script>
-    <script src="scripts/util/owl.carousel.min.js"></script>
     <script src="scripts/menu-mobile.js"></script>
     <script src="scripts/back-to-top.js"></script>
-    <script>
-        $(document).ready(function(){
-            const $owl = $('.hero-slider__cards').owlCarousel(
-            {
-                items: 1,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                nav: false,
-                dots: false,
-                animateIn: 'animate__animated animate__fadeIn',
-                smartSpeed: 450,
-                pullDrag: true,
-                autoWidth: false,
-                autoHeight: false,
-            });
-            $(".hero-slider__button_next").click(function() {
-                $owl.trigger("next.owl.carousel");
-            });
-
-            $(".hero-slider__button_prev").click(function() {
-                $owl.trigger("prev.owl.carousel");
-            });
-        });
-    </script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/filter.js"></script>
 </body>
 </html>
