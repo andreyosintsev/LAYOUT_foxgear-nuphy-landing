@@ -253,6 +253,7 @@
                                             id="form__radio_coral" 
                                             name="switch"
                                             value="Низкопрофильные Magnetic Jade"
+                                            data-price="15990 р."
                                             checked>
                                     <label class="form__label" for="form__radio_coral">Низкопрофильные Magnetic Jade</label>
                                 </div>
@@ -261,7 +262,8 @@
                                             type="radio" 
                                             id="form__radio_jade" 
                                             name="switch"
-                                            value="Низкопрофильные Magnetic Jade Pro">
+                                            value="Низкопрофильные Magnetic Jade Pro"
+                                            data-price="16990 р.">
                                     <label class="form__label" for="form__radio_jade">Низкопрофильные Magnetic Jade Pro</label>
                                 </div>
                             </fieldset>
@@ -986,6 +988,7 @@
                 <input class="form__input" name="name" placeholder="Ваше имя">
                 <input class="form__input" name="tel" placeholder="Телефон">
                 <input class="form__input" name="email" placeholder="E-mail">
+                <input class="form__input" name="promocode" placeholder="Промокод (при наличии)">
                 <input type="hidden" name="product">
                 <div class="form__submit">
                     <input class="button form__button" type="submit" value="Отправить">
@@ -1040,6 +1043,7 @@
     <script src="scripts/accordion.js"></script>
     <script src="scripts/carousels.js"></script>
     <script src="scripts/single-slider.js"></script>
+    <script src="scripts/price-selector.js"></script>
     <script src="scripts/popup.js"></script>
 
     <script>
@@ -1047,5 +1051,23 @@
             $("#comparison-images1").twentytwenty({ no_overlay: true });
         })
     </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(103253545, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/103253545" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
 </html>

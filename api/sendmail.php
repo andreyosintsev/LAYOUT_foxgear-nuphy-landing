@@ -3,10 +3,12 @@
     $from       = 'info@nuphy-russia.ru';
     $to         = 'info@foxgamer.ru';
 
+
     $name       = $_POST['name'];
     $tel        = $_POST['tel'];
     $email      = $_POST['email'];
     $product    = $_POST['product'];
+    $promocode  = empty($_POST['promocode']) ? 'без промокода' : $_POST['promocode'];
 
     $subject = mb_encode_mimeheader('Заявка с сайта клавиатур NuPhy','UTF-8', 'B');
 
@@ -26,6 +28,7 @@
     $message .= 'Телефон: <b>' .$tel. '</b><br/>';
     $message .= 'E-mail: <b>' .$email. '</b><br/>';
     $message .= '<br />';
+    $message .= 'Промокод: <font color="red"><b>' .$promocode. '</b></font><br/>';
     $message .= '<br />';
     $message .= 'Скорее ответьте на обращение пользователя! Быть может, это готовый покупатель.';
     $message .= "</div></html>\r\n";
