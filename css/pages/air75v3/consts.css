@@ -1,0 +1,48 @@
+:root {
+    --typeHeaderPrimary: "Roboto Condensed";
+    --typeHeaderFallback: sans-serif;
+    --typeHeaderSize: 38px;
+    --typeHeaderWeight: 700;
+    --typeHeaderLineHeight: 1.1;
+    --typeHeaderSpacing: 0.0em;
+
+    --typeBasePrimary: Roboto;
+    --typeBaseFallback: sans-serif;
+    --typeBaseSize: 16px;
+    --typeBaseWeight: 400;
+    --typeBaseSpacing: 0.025em;
+    --typeBaseLineHeight: 1.5;
+
+    --colorSmallImageBg: #e5e5e5;
+    --colorSmallImageBgDark: #dddddd;
+    --colorLargeImageBg: #0f0f0f;
+    --colorLargeImageBgLight: #303030;
+
+    --iconWeight: 3px;
+    --iconLinecaps: round;
+
+
+    --buttonRadius: 3px;
+    --btnPadding: 11px 25px;
+
+    --roundness: 15px;
+
+    --gridThickness: 0px;
+
+
+    --productTileMargin: 0%;
+    --collectionTileMargin: 15%;
+
+    --swatchSize: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+    --typeBaseSize: 14px;
+
+
+    --roundness: 15px;
+    --btnPadding: 9px 25px;
+
+    }
+}

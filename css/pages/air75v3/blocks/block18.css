@@ -1,0 +1,95 @@
+.text-effect-template--16981198340205__text_effect_KLCJRM {
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    .text-container {
+        .text-title {
+            color: #000;
+            font-family: 'Roboto';
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-bottom: 16px;
+            background: linear-gradient(94deg, #53E7C7 6.28%, #57BFEE 93.62%);
+            ;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            white-space: pre-line;
+        }
+
+        .text-content {
+            color: rgba(29, 29, 31, 0.24);
+            font-family: var(--Roboto, Roboto);
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 42px;
+            letter-spacing: 0.44px;
+
+            .text-highlight {
+                color: rgba(62, 67, 90, 0.86);
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .text-img {
+        margin-top: 24px;
+        padding: 0 16px;
+
+        img {
+            display: block;
+            border-radius: 32px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 24px;
+            margin: 0;
+        }
+
+        .top {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .bottom {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media only screen and (max-width: 888px) {
+        .text-container {
+            padding-left: 16px;
+            padding-right: 16px;
+
+            .text-title {
+                font-size: 40px;
+                line-height: normal;
+                margin-bottom: 24px;
+            }
+
+            .text-content {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .text-img {
+            img {
+                border-radius: 16px;
+            }
+
+            .grid {
+                gap: 16px;
+            }
+
+            .top {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}

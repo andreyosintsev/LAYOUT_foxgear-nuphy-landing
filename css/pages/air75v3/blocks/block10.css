@@ -1,0 +1,553 @@
+.title-video-box-title_video_bnNUz3 {
+    background-color: #ffffff;
+    /* padding: 200px 0 100px; */
+    padding: 200px 0 0;
+
+    .text-container {
+        max-width: 1120px;
+        margin: 0 auto;
+
+        .text-title,
+        .text-decription {
+            text-align: center;
+        }
+
+        .text-title {
+            color: #000;
+            font-family: Roboto;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-bottom: 16px;
+            white-space: pre-line;
+            background: linear-gradient(94deg, #53E7C7 6.28%, #57BFEE 93.62%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-decription {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 42px;
+            margin-bottom: 100px;
+
+            color: rgba(29, 29, 31, 0.24);
+
+            .text-highlight {
+
+                color: rgba(62, 67, 90, 0.86);
+
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+
+        .current-video,
+        .current-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            transform: scale(1.4);
+        }
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .title-video-box-title_video_bnNUz3 {
+        padding: 80px 0 0;
+
+        .text-container {
+            padding: 0 16px;
+
+            .text-title {
+                font-size: 32px;
+            }
+
+            .text-decription {
+                font-size: 14px;
+                margin-bottom: 40px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+.electricity-comparison-box-electricity_comparison_NKx3pm {
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    .btn-controls {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 24px;
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 0 24px;
+        box-sizing: border-box;
+
+        .text {
+            max-width: 784px;
+
+            .title {
+                margin-bottom: 8px;
+                color: #3E435A;
+                font-family: Roboto;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 42px;
+                letter-spacing: 0.64px;
+                white-space: pre-line;
+            }
+
+            .description {
+                color: rgba(62, 67, 90, 0.24);
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                letter-spacing: 0.36px;
+            }
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background: rgba(29, 29, 31, 0.04);
+            padding: 4px;
+            color: #3E435A;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            .button {
+                padding: 8px 24px;
+                font-size: 20px;
+                font-weight: 700;
+                border: none;
+                white-space: nowrap;
+                cursor: pointer;
+            }
+
+            .active {
+                background-color: #3E435A;
+                color: #fff;
+                border-radius: 17px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .battery-progress-section {
+        background: #f5f5f5;
+        padding: 72px;
+        border-radius: 32px;
+        margin: 0 auto;
+
+        .bar {
+            margin-bottom: 24px;
+            border-radius: 30px;
+            background: #fff;
+            padding: 26px 40px 24px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .label {
+                display: inline-block;
+                width: 100px;
+                color: #3E435A;
+                text-align: right;
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 900;
+                line-height: 27px;
+            }
+
+            .red-label {
+                background: linear-gradient(94deg, #53E7C7 6.28%, #57BFEE 93.62%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .progress-line {
+                flex: 1;
+
+                .value {
+                    display: inline-block;
+                    color: #3E435A;
+                    text-align: center;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 6px;
+                    transition: opacity 0.3s ease;
+                }
+
+                .progress-bg {
+                    width: 100%;
+                    max-width: 100%;
+                    background: #eee;
+                    border-radius: 12px;
+                    height: 8px;
+                    overflow: hidden;
+
+                    .progress-fill {
+                        background: linear-gradient(91deg, rgba(61, 61, 61, 0.86) -0.12%, rgba(213, 212, 212, 0.86) 99.88%);
+                        width: 0;
+                        height: 100%;
+                        border-radius: 12px;
+                    }
+
+                    .red-fill {
+                        background: linear-gradient(94deg, #53E7C7 6.28%, #57BFEE 93.62%);
+                    }
+                }
+            }
+        }
+
+        .bar:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .electricity-comparison-box-electricity_comparison_NKx3pm {
+        padding: 0 16px;
+        margin-top: 40px;
+
+        .btn-controls {
+            flex-direction: column;
+            align-items: center;
+
+            .text {
+                text-align: center;
+
+                .title {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+
+                .description {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+
+            .controls {
+                .button {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .battery-progress-section {
+            padding: 16px;
+            border-radius: 16px;
+
+            .bar {
+                padding: 16px;
+                border-radius: 16px;
+
+                .label {
+                    width: 75px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.text-img-text_img_group_four_JnbgM3 {
+    .text-img-box {
+        max-width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        margin-top: 100px;
+        flex-wrap: nowrap;
+    }
+
+    .text-img-box.image-bottom {
+        gap: 20px;
+    }
+
+    .text-img-box.image-top {
+        gap: 24px;
+    }
+
+    .text-img-part {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .title-and-dec {
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .img-title {
+        color: #3E435A;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 42px;
+    }
+
+    .img-description {
+        color: rgba(29, 29, 31, 0.32);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .text-img-box.image-top .img-title {
+        margin-top: 10px;
+    }
+
+    .text-img-box.image-bottom .img-title {
+        margin-bottom: 10px;
+    }
+
+    .part-img {
+        width: 100%;
+        max-height: 393px;
+        border-radius: 32px;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .text-img-text_img_group_four_JnbgM3 {
+        .text-img-box {
+            padding: 0 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .text-img-text_img_group_four_JnbgM3 {
+        .text-img-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .text-img-box.image-top {
+            gap: 16px;
+        }
+
+        .part-img {
+            border-radius: 16px;
+        }
+
+        .text-img-part {
+            .title-and-dec {
+                padding: 0;
+            }
+
+            .img-title {
+                font-size: 18px;
+                flex-wrap: wrap;
+                margin-top: 40px;
+            }
+
+            .img-description {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.canvas_scroll_bac-canvas_scroll_pqAbbV {
+    .canvas-scroll-section-canvas_scroll_pqAbbV {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    .content-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        max-width: 1120px;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .fade-text {
+            opacity: 0;
+            transition: opacity 1s ease;
+            max-width: 560px;
+            color: rgba(29, 29, 31, 0.24);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+
+            .fade-text-title {
+                color: rgba(29, 29, 31, 0.86);
+                font-size: 32px;
+                font-weight: 900;
+                margin-bottom: 8px;
+            }
+        }
+
+        .fade-text.visible {
+            opacity: 1;
+        }
+
+        &.position-top {
+            top: 0;
+            transform: translateX(-50%);
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+
+            .fade-text {
+                max-width: 1120px;
+
+                .fade-text-title {
+                    text-align: center;
+                    font-family: Roboto;
+                    font-size: 72px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 1.44px;
+                    background: linear-gradient(94deg, #53E7C7 6.28%, #57BFEE 93.62%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-bottom: 16px;
+                }
+
+                .fade-text-content {
+                    color: rgba(62, 67, 90, 0.24);
+                    text-align: center;
+                    font-family: Roboto;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 42px;
+                    letter-spacing: 0.44px;
+                    white-space: pre-line;
+                }
+            }
+        }
+
+        &.position-bottom {
+            top: auto;
+            bottom: 0;
+            transform: translateX(-50%);
+            justify-content: center;
+            align-items: flex-end;
+            height: 100%;
+        }
+
+        &.position-left {
+            justify-content: flex-start;
+
+            .fade-text {
+                max-width: 560px;
+            }
+        }
+
+        &.position-right {
+            justify-content: flex-end;
+
+            .fade-text {
+                text-align: right;
+                max-width: 560px;
+            }
+        }
+    }
+
+    .H5_video_bac {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .canvas_scroll_bac-canvas_scroll_pqAbbV {
+        .canvas-scroll-section-canvas_scroll_pqAbbV {
+            margin-top: 80px;
+            display: none;
+        }
+
+        .scrollmagic-pin-spacer {
+            display: none !important;
+        }
+
+        .content-container {
+            position: static;
+            transform: none;
+            justify-content: center;
+
+            .fade-text {
+                opacity: 1 !important;
+
+                .fade-text-title {
+                    text-align: center;
+                    white-space: pre-line;
+                    background: linear-gradient(94deg, #53E7C7 6.28%, #57BFEE 93.62%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .fade-text-content {
+                    text-align: center;
+                }
+            }
+        }
+
+        .content-container .position-top {
+            .fade-text {
+                .fade-text-title {
+                    font-size: 32px !important;
+                }
+
+                .fade-text-content {
+                    font-size: 14px !important;
+                    line-height: 20px !important;
+                }
+            }
+        }
+
+        .H5_video_bac {
+            display: block;
+            position: relative;
+        }
+    }
+}

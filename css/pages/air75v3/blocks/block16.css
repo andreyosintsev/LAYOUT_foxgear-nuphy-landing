@@ -1,0 +1,87 @@
+.title-video-box-template--16981198340205__title_video_ApwaVz {
+    background-color: #000000;
+    padding: 100px 0 100px;
+
+    .text-container {
+        max-width: 1120px;
+        margin: 0 auto;
+
+        .text-title,
+        .text-decription {
+            text-align: center;
+        }
+
+        .text-title {
+            color: #000;
+            font-family: 'Roboto';
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-bottom: 16px;
+            white-space: pre-line;
+            background: linear-gradient(94deg, #53E7C7 6.28%, #57BFEE 93.62%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-decription {
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 42px;
+            margin-bottom: 100px;
+            color: rgba(255, 255, 255, 0.32);
+            position: relative;
+            z-index: 99;
+
+            .text-highlight {
+                color: rgba(255, 255, 255, 0.86);
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        .current-video {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            transform: scale(1.4);
+        }
+
+        .current-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .title-video-box-template--16981198340205__title_video_ApwaVz {
+        padding: 80px 0 0px;
+
+        .text-container {
+            padding: 0 16px;
+
+            .text-title {
+                font-size: 32px;
+                line-height: normal;
+                margin-bottom: 16px;
+            }
+
+            .text-decription {
+                font-size: 14px;
+                line-height: 26px;
+                margin-bottom: 40px;
+
+                .text-highlight {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

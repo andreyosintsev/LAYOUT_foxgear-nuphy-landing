@@ -1,0 +1,107 @@
+.float-img-box-template--16981198340205__float_img_manhBD {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    gap: 78px;
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 200px;
+
+    .text-img-content {
+        max-width: 672px;
+
+        .title {
+            color: #3E435A;
+            font-family: Roboto;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 42px;
+            letter-spacing: 0.64px;
+            margin-bottom: 8px;
+            white-space: pre-line;
+        }
+
+        .description {
+            color: rgba(29, 29, 31, 0.24);
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0.36px;
+            margin-bottom: 24px;
+
+            .text-highlight {
+                color: rgba(62, 67, 90, 0.86);
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        .icon-box {
+            display: flex;
+            gap: 40px;
+
+            .icon {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
+    .float-img {
+        position: absolute;
+        top: 50%;
+        left: 68%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: flex-end;
+
+        .fl-image {
+            display: block;
+            max-width: 1595px;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .float-img-box-template--16981198340205__float_img_manhBD {
+        margin-top: 80px;
+
+        .text-img-content {
+            padding: 0 16px;
+        }
+
+        flex-direction: column;
+        margin-bottom: 100px;
+
+        .text-img-content {
+            max-width: 100%;
+
+            .description {
+                font-size: 14px;
+
+                .text-highlight {
+                    font-size: 14px;
+                }
+            }
+
+            .icon-box {
+                justify-content: space-between;
+                gap: 0;
+            }
+        }
+
+        .float-img {
+            padding-left: 16px;
+            position: static;
+            transform: unset;
+
+            .fl-image {
+                width: 100%;
+            }
+        }
+    }
+}

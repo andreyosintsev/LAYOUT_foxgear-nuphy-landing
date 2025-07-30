@@ -1,0 +1,72 @@
+.bg-text-box-template--16981198340205__bg_text_KcKQcw {
+    padding: 0 16px;
+
+    .bg-text-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 100px;
+        margin-top: 0px;
+        border-radius: 32px;
+        transition: all 0.6s ease;
+        background-image: url(../../../../images/pages/air75v3/content/backgrounds/nuphy-air75-v3-Multitasking.webp);
+    }
+
+    .content-wrapper {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        font-family: Roboto;
+    }
+
+    .title {
+        font-size: clamp(32px, 6vw, 72px);
+        font-weight: 900;
+        letter-spacing: 1.44px;
+        white-space: pre-line;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+
+    .subtitle {
+        font-size: clamp(14px, 2vw, 22px);
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.44px;
+        text-align: center;
+    }
+
+    .text-highlight {
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .bg-text-box-template--16981198340205__bg_text_KcKQcw {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+        .bg-text-container {
+            height: 108vw;
+            min-height: 434px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+            border-radius: 0;
+
+            background-size: cover;
+            background-position: center top;
+            background-image: url(../../../../images/pages/air75v3/content/backgrounds/nuphy-air75-v3-Multitasking-h5.webp?v=1749699544);
+        }
+    }
+}

@@ -1,0 +1,89 @@
+function setupScrollCanvas(canvas, triggerElement, basePath, ext, frameCount, frameDuration, fadeTextId, contentPosition, externalController = null) {
+    const ctx = canvas.getContext("2d"),
+        images = Array(frameCount),
+        loaded = Array(frameCount).fill(!1);
+    let loadedCount = 0,
+        currentFrame = 0,
+        initialized = !1,
+        controller,
+        canvasWidth = 0,
+        canvasHeight = 0;
+    const imgSrc = (n, padWidth = 5) => `${basePath}${n.toString().padStart(padWidth, "0")}.${ext}`;
+    function loadFrame(i) {
+        const img = new Image();
+        (img.src = imgSrc(i)),
+            (img.onload = () => {
+                (images[i] = img), (loaded[i] = !0), loadedCount++, i === 0 && !initialized && ((initialized = !0), resizeCanvas(), render(0));
+            });
+    }
+    
+    function preloadImages(prior = 8) {
+        for (let i = 0; i < frameCount; i++) loaded[i] || (i >= prior ? setTimeout(() => loadFrame(i), 0) : loadFrame(i));
+    }
+
+    function resizeCanvas() {
+        const dpr = window.devicePixelRatio || 1;
+        (canvasWidth = canvas.clientWidth), (canvasHeight = canvas.clientHeight), (canvas.width = canvasWidth * dpr), (canvas.height = canvasHeight * dpr), ctx.setTransform(1, 0, 0, 1, 0, 0), ctx.scale(dpr, dpr);
+    }
+
+    function render(index) {
+        if (!loaded[index]) return;
+        const img = images[index];
+        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+        const imgRatio = img.width / img.height,
+            canvasRatio = canvasWidth / canvasHeight;
+        let drawWidth, drawHeight;
+        imgRatio > canvasRatio ? ((drawWidth = canvasWidth), (drawHeight = canvasWidth / imgRatio)) : ((drawHeight = canvasHeight), (drawWidth = canvasHeight * imgRatio));
+        const dx = (canvasWidth - drawWidth) / 2,
+            dy = (canvasHeight - drawHeight) / 2;
+        ctx.drawImage(img, dx, dy, drawWidth, drawHeight);
+    }
+
+    function initScrollMagic() {
+        (controller = externalController || new ScrollMagic.Controller()),
+            new ScrollMagic.Scene({ triggerElement, duration: frameDuration, triggerHook: 0 })
+                .setPin(triggerElement)
+                .addTo(controller)
+                .on("progress", (e) => {
+                    const frameIndex = Math.min(frameCount - 1, Math.floor(e.progress * frameCount));
+                    if ((frameIndex !== currentFrame && loaded[frameIndex] && ((currentFrame = frameIndex), render(currentFrame)), contentPosition === "top")) return;
+                    const fadeText = document.getElementById(fadeTextId);
+                    e.progress >= 0.4 ? fadeText.classList.add("visible") : fadeText.classList.remove("visible");
+                });
+    }
+    function debounce(fn, delay = 100) {
+        let timer;
+        return (...args) => {
+            clearTimeout(timer), (timer = setTimeout(() => fn.apply(this, args), delay));
+        };
+    }
+    const onResize = debounce(() => {
+        resizeCanvas(), render(currentFrame);
+    });
+    function initialize() {
+        window.addEventListener("resize", onResize), preloadImages(), initScrollMagic();
+    }
+    if (contentPosition === "top") {
+        let updateFadeTextState2 = function () {
+            if (done) return;
+            const rect = fadeText.getBoundingClientRect(),
+                triggerRect = triggerElement.getBoundingClientRect();
+            !started && rect.top < window.innerHeight && (fadeText.classList.add("visible"), (started = !0)),
+                started && Math.abs(rect.top - triggerRect.top) < 100 && ((fadeText.style.transition = "none"), (fadeText.style.opacity = 1), (done = !0));
+        };
+        var updateFadeTextState = updateFadeTextState2;
+        const fadeText = document.getElementById(fadeTextId);
+        let started = !1,
+            done = !1;
+        window.addEventListener("scroll", updateFadeTextState2), updateFadeTextState2();
+    }
+    new IntersectionObserver(
+        (entries, obs) => {
+            entries.forEach((entry) => {
+                entry.isIntersecting && (obs.unobserve(entry.target), initialize());
+            });
+        },
+        { threshold: 0.1 }
+    ).observe(triggerElement),
+        loadFrame(0);
+}
