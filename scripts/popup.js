@@ -174,9 +174,9 @@
         const product = (button && button.dataset.product) || '';
 
         console.log(product);
-        const specs = getSelectedSpecs(button && button.form) || '';
+        const specs = getSelectedSpecs(button && button.form) ? ' - ' + getSelectedSpecs(button.form) : '';
 
-        const fullProduct = (product + ' - ' + specs).trim();
+        const fullProduct = (product + specs).trim();
 
         inputProduct.value = fullProduct;
         popupProduct.innerHTML = `Модель: ${fullProduct}`; 
